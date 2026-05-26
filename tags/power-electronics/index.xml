@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power Electronics on Will&#39;s Portfolio</title>
+    <link>/tags/power-electronics/</link>
+    <description>Recent content in Power Electronics on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2025 02:51:52 -0600</lastBuildDate>
+    <atom:link href="/tags/power-electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Li-ion Battery Charger</title>
+      <link>/posts/battery_charger/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/posts/battery_charger/</guid>
+      <description>&lt;p&gt;A custom single-cell Li-ion charger / boost / protection PCB. Worked for charging. Worked for boosting. The protection circuit got the MOSFET backwards.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved January 2025. Replaced by off-the-shelf modules for the projects I would&amp;rsquo;ve used it on.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBA (Custom BJT 3D Printer) | Will&#39;s Portfolio</title>
+
+    
+
+<link rel="canonical" href="/posts/pba/" />
+
+
+
+<meta name="author" content="Will Rohren" />
+<meta name="description" content="A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.
+STATUS: Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.
+" />
+
+
+<meta name="keywords" content="SolidWorks,CAD,3D Printing,Binder Jet,Autoclave,Sheet Metal,CoreXY,Aluminum Extrusion,Texas A&amp;M,Lab Project,Shelved">
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="/posts/pba/">
+  <meta property="og:site_name" content="Will&#39;s Portfolio">
+  <meta property="og:title" content="PBA (Custom BJT 3D Printer)">
+  <meta property="og:description" content="A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.
+STATUS: Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-14T09:07:46-05:00">
+    <meta property="article:modified_time" content="2025-08-29T09:07:46-05:00">
+    <meta property="article:tag" content="SolidWorks">
+    <meta property="article:tag" content="CAD">
+    <meta property="article:tag" content="3D Printing">
+    <meta property="article:tag" content="Binder Jet">
+    <meta property="article:tag" content="Autoclave">
+    <meta property="article:tag" content="Sheet Metal">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PBA (Custom BJT 3D Printer)">
+  <meta name="twitter:description" content="A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.
+STATUS: Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/face_zoomed.png" alt="" />
+        </div>
+      </div>
+
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+          
+
+          
+        </ul>
+      </div>
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="PBA (Custom BJT 3D Printer)">
+  <meta itemprop="description" content="A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.
+STATUS: Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.">
+  <meta itemprop="datePublished" content="2025-06-14T09:07:46-05:00">
+  <meta itemprop="dateModified" content="2025-08-29T09:07:46-05:00">
+  <meta itemprop="wordCount" content="1626">
+  <meta itemprop="keywords" content="SolidWorks,CAD,3D Printing,Binder Jet,Autoclave,Sheet Metal,CoreXY,Aluminum Extrusion,Texas A&amp;M,Lab Project,Shelved">
+
+      <header>
+        <h1 itemprop="headline">PBA (Custom BJT 3D Printer)</h1>
+        <p class="text-sm">
+          
+            Saturday, Jun 14, 2025
+          
+
+          | <span>8 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Friday, Aug 29, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=PBA%20%28Custom%20BJT%203D%20Printer%29&amp;url=/posts/pba/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=/posts/pba/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=PBA%20%28Custom%20BJT%203D%20Printer%29%20/posts/pba/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <p>A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.</p>
+<p><strong>STATUS:</strong> Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.</p>
+<h1 id="hahahugoshortcode12s0hbhb"><a href="/">Back to Home Page</a>
+</h1>
+<hr>
+<h3 id="background">Background</h3>
+<p>Summer 2025 lab project with Dr. Pei&rsquo;s group at Texas A&amp;M, jointly run between the ISEN and Microbiology departments. The premise: 3D-print custom fungal-mycelium objects by depositing anti-fungal binder in a hemp-hurd or sawdust powder bed, then introducing a fungus strain that colonizes only the unbinded interior. The entire printer has to be sterilized in an autoclave (121°C steam, ~2&rsquo;×2&rsquo;×2&rsquo; envelope) and operated in a sterile environment, so every component had to survive that thermal cycle. The mechanical side isn&rsquo;t particularly sensitive, but the surrounding biology research is. Anything below stays vague where it overlaps with the bio side.</p>
+<p><img src="PBA_V3/BioCasting_Sketch.jpg" alt="The biocasting process">
+<em>Anti-fungal binder (red, polyethylene glycol) is deposited in a precise outline within hemp powder. Fungus water inoculates the interior, which colonizes only the unbinded volume. The outer hemp is broken away, leaving the fungus-shaped part. My job was the printer that automates the binder deposition step</em></p>
+<hr>
+<h3 id="project-timeline">Project Timeline</h3>
+<details>
+    <summary><strong>How a binder-jet (BJT) 3D printer actually works</strong></summary>
+    <p>At the highest level, BJT printing glues layers of powder together to form a solid 3D object. Modern industrial BJT printers (StrataSYS, ExOne) use a piezoelectric printhead to dispense binder onto powder beds of titanium, tungsten, ceramic, aluminum, or various combinations to achieve specific material properties.</p>
+<p>The print loop is straightforward: lower the print bed by one layer height (∂z, typically 0.1 mm), refresh a new powder layer at thickness ∂z, lay down binder in the 2D pattern for that layer, then repeat.</p>
+<p>There are two common ways to refresh powder. A sifter or roller can drop fresh powder from a hopper onto the bed and roll it smooth. Or you run two job boxes side-by-side: when the print bed drops by ∂z, an adjacent feed box rises by ∂z, and a roller pushes the displaced volume across to top up the print side.</p>
+<p>For the fungus printer, the powder is hemp-hurd or coarse sawdust. We tested sifting and it jammed the sieve almost immediately, so the dual-box approach was the only viable option. Push, don&rsquo;t sift.</p>
+
+  </details>
+<details>
+    <summary><strong>PBA-V1: Z-Axis from Epoxied Steel Brackets (Mid June 2025)</strong></summary>
+    <p>The brief was deliberately minimal. Make a plate go up and down inside the bracket frame. Don&rsquo;t worry about precision, don&rsquo;t worry about scope. Just get something physical built so we can have a real conversation about what the project actually needs.</p>
+<p>I sketched a plan on my tablet, modeled the components in SolidWorks, and used the Rapid Prototyping Studio to manufacture everything in a single day. Most of the parts were 3D printed; the build plate itself was plasma cut.</p>
+<p>The result was rough. About 1 inch of total Z travel, with the plate free to wobble and rotate inside its guides because the bracket geometry wasn&rsquo;t precise enough to constrain it properly. None of that was the point. The point was to have something physical to hand back, learn what the project actually needed, and build enough context to start designing for real.</p>
+<p><img src="PBA_V1/Original_Parts.jpg" alt="Original epoxied brackets">
+<em>The starting hardware: four steel brackets epoxied into a frame</em></p>
+<p><img src="PBA_V1/Initial_Sketch.jpg" alt="Initial sketch">
+<em>Tablet sketch from day one. Leadscrew up the middle, guide rails on the corners, build plate on top</em></p>
+<p><img src="PBA_V1/Assembly.png" alt="V1 CAD assembly">
+<em>SolidWorks model of the V1 mechanism</em></p>
+<p><img src="PBA_V1/Raised_and_Lowered.jpg" alt="V1 raised and lowered">
+<em>Roughly an inch of travel, with a lot of slop in both rotation and translation</em></p>
+
+  </details>
+<details>
+    <summary><strong>PBA-V2: Sheet-Metal Job Box (Late June 2025)</strong></summary>
+    <p>By V2 I had more context. The printer needed to be sterilized in an autoclave (121°C steam) before each print, then operated in a sterile environment to keep contaminants out of the powder bed. That meant the box around the print bed needed tight, sealable corners. V1&rsquo;s epoxied bracket setup wasn&rsquo;t going to cut it.</p>
+<p>The plan: bend the job box from sheet metal so the corners would be predictable and could seal against a gasket on the lid. Walls also turn out reasonably perpendicular from a press brake, which simplifies the bed-to-wall clearance.</p>
+<p>I spent about six hours sketching a 2D cross-section with rough dimensions, reasoning through where each component would live and how the seal would work. Once that felt solid, translating into a 3D SolidWorks assembly took another four hours. McMaster-Carr models for hardware, custom geometry for everything else. I presented to Dr. Pei and the rest of the lab, got approval, and ordered parts.</p>
+<p>The 16ga stainless steel sheet was the critical-path item, and as of when I shelved the project I was still waiting on it. That was blocking the bed and gasket design too. I wanted to finalize the box before committing to the rest.</p>
+<p><img src="PBA_V2/Clean_Sketch.jpg" alt="Cleaned-up sketch">
+<em>Cleaned-up cross-section sketch with dimensions</em></p>
+<p><img src="PBA_V2/V2_Drawing_Lid.jpg" alt="Lid drawing">
+<em>Lid layout sketch</em></p>
+<p><img src="PBA_V2/CrossSection_Movement.png" alt="V2 cross section movement">
+<em>Cross section showing lowered &amp; raised positions</em></p>
+<p><img src="PBA_V2/Final_CAD.png" alt="V2 final CAD">
+<em>Final V2 assembly in CAD</em></p>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/pba/PBA_V2/PBA_V2_Explode.mp4" type="video/mp4">
+</video>
+</figure>
+*Solidworks exploded assembly*
+<hr>
+
+  </details>
+<details>
+    <summary><strong>PBA-V3: Full Printer Overhaul (Late July – Mid August 2025)</strong></summary>
+    <h3 id="feature-creep">Feature Creep.</h3>
+<p>Right after the V2 review, it was revealed to me that the researchers wanted to expand the scope: the printer needed to automate everything, not just the bed. That meant adding a full X/Y gantry for binder deposition and a powder-spreading mechanism between the bed and a feed box.</p>
+<p>I hadn&rsquo;t designed the V2 prototype to house a binder deposition mechanism, nor did I foresee any way of making it possible, so I opted to start from scratch.</p>
+<p>For inspiration I leaned on three open-source binder-jet projects: <a href="https://ytec3d.com/oasis-3dp/" target="_blank">Project Oasis</a>
+, <a href="https://ytec3d.com/plan-b/" target="_blank">Plan B</a>
+, and the <a href="https://sls4all.com/" target="_blank">InovaMK1</a>
+. I wanted to see how other people had laid out the gantry, spreader, and job-box arrangement at DIY scale. For the X/Y motion specifically, I pulled the gantry from the <a href="https://vorondesign.com/voron0.2" target="_blank">Voron 0.2</a>
+ project, a well-documented CoreXY system I could adapt without reinventing the kinematics.</p>
+<p>The full printer breaks into four mostly-independent sub-systems: the Z-axis (the print bed itself, now folded back into the larger machine), the X/Y gantry (positions the binder printhead), the roller / spreader (refreshes powder between layers), and the binder deposition (peristaltic pump feeding a nozzle on the gantry). Working through them one at a time made the overall problem tractable instead of overwhelming.</p>
+<p><img src="PBA_V3/Frame_Concept.png" alt="Frame concept">
+<em>Early concept layout. Aluminum extrusion frame (green), gantry on top, dual job boxes underneath, spreader rail in between, printhead on the gantry carriage</em></p>
+<hr>
+<h3 id="adapting-the-voron-02-gantry">Adapting the Voron 0.2 gantry</h3>
+<p>The Voron 0.2 has a published CAD package, so the workflow was to import their STEP files into solidworks, convert them to the native .SLDPRT format, then mate them in an assembly.</p>
+<p><img src="PBA_V3/Reference_Gantry.png" alt="Voron 0.2 reference gantry">
+<em>The Voron 0.2 gantry I started from. CoreXY, twin linear rails, belt-driven from corner-mounted steppers</em></p>
+<p><img src="PBA_V3/Converting_Voron_CAD.jpg" alt="Remodeling the Voron in SolidWorks">
+<em>Rebuilding the Voron components in SolidWorks</em></p>
+<p><img src="PBA_V3/Adapted_Gantry.png" alt="Adapted gantry">
+<em>Adapted gantry with working solidworks assembly for motion</em></p>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/pba/PBA_V3/PBA_Timelapse.mp4" type="video/mp4">
+</video>
+</figure>
+*X-axis frame timelapse assembly & integration into gantry CAD*
+<hr>
+<h3 id="spreader-mechanism">Spreader mechanism</h3>
+<p>The spreader was the most interesting design piece because it has two motions happening at once. The roller has to translate across the bed, and it has to spin while it does so.</p>
+<p><img src="PBA_V3/High_Level_Goal.jpg" alt="Spreader operating principle">
+<em>The dual-box concept. The print bed (right) drops by ∂z, the feed box (left) rises by ∂z, and the roller translates across pushing the displaced powder onto the print side. The printhead lives on the gantry above and writes the binder pattern after the spread</em></p>
+<p>After a bit of thought, I took after the Oasis 3D printer and decided to just use a DC motor that would be connected to the roller either directly or via a belt so that I could more easily control its speed.</p>
+<p><img src="PBA_V3/Spreader_PoC_2.png" alt="Single-roller mechanism schematic">
+<em>Cleaner schematic of the integrated carriage. Motor, belt, MGN7 linear-rail block, and roller in one assembly</em></p>
+<p><img src="PBA_V3/Spreader_Concept.png" alt="Spreader cross-section in CAD">
+<em>Spreader mechanism shown with the representative job box assembly. This version ended up not working due to the motor sticking out and colliding with the frame extrusions</em></p>
+<p><img src="PBA_V3/Latest_Assembly.png" alt="V3 full assembly, August 2025">
+<em>V3 full assembly as of when I shelved the project (8/20/25)</em></p>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/pba/PBA_V3/8_19_25_PBA-V3.mp4" type="video/mp4">
+</video>
+</figure>
+<p><em>Latest V3 CAD demonstration:</em></p>
+<p>In order:</p>
+<ul>
+<li>Dual job-box movement (powder hold &amp; print area)</li>
+<li>Spreader mechanism</li>
+<li>XY gantry movement (where binder dropper will go)</li>
+</ul>
+<p>* Switches to top view to show that there are no interferences</p>
+<ul>
+<li>XY gantry movement again over the right job box, before moving to the <em>far</em> right corner to be out of the way for the spreader</li>
+<li>Spreader mechanism again</li>
+</ul>
+<hr>
+<h3 id="open-problems-on-v3">Open problems on V3</h3>
+<p>Besides for general polishing that would have needed to happen, there was one big unsolved problem by the time I shelved the project:</p>
+<p>The job box mounting strategy. I went back and forth between how I would manufacture the job box, if I wanted it to be swappable, how they would survive the autoclave cycling, how it would be attached to the rest of the frame (and leveled for the sake of the spreader), and more.</p>
+<p>With some more time, I&rsquo;m sure I could have come up with a good solution, but I just didn&rsquo;t have the time because this project was introduced to me so late in the summer.</p>
+
+  </details>
+<details>
+    <summary><strong>Shelved (August 2025 – Present)</strong></summary>
+    <p><a href="/posts/sae_aero/">SAE Aero</a>
+ ramped up in late August and consumed the time I&rsquo;d been spending on this project. Around the same time, the lab side slowed down. The lead PhD student wasn&rsquo;t making rapid progress on the bio side, so the urgency for a working printer dropped to match. Both factors together made this an easy thing to put down without anyone particularly minding.</p>
+<p>As of writing (May 2026), the V3 design is still mostly intact in CAD. The final job box design and the binder deposition system are still as yet unsolved. I&rsquo;d researched the latter up to the point of wanting to use a peristaltic pump with a static reservoir of binder, but not much beyond that in terms of integration and parts selection.</p>
+
+  </details>
+<hr>
+<h1 id="hahahugoshortcode12s6hbhb"><a href="/">Back to Home Page</a>
+</h1>
+
+        
+      </section>
+
+      
+
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 Will&#39;s Portfolio</p>
+  
+
+  
+  <p class="text-sm">
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with 
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Howdy!</p>
+<p>I am William Rohren, I am a senior Mechanical Engineering Major at Texas A&amp;M University.</p>
+<p>This site serves as a portfolio to display my various projects, as well as a blog so that I can have a log of the things I do.</p>
+<p><img src="IMG_4208.jpg" alt="pic of me"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">One More Note</div>
+
+        <div class="prose dark:prose-invert">
+          <p>I try to do my best to keep this reasonably updated, but my priorities are in the projects themselves.
+Documentation unfortunately tends to be a retroactive effort.</p>
+<details>
+    <summary>Changelog</summary>
+    <p>5/11/26 - Content &amp; structure overhaul</p>
+<!-- - Rewrote every existing page for consistent tone and detail
+- Cleaned up front matter, categories, tags, and weights across all pages
+- Added First Post and Misc. Projects stub
+- Reordered portfolio: engineering work first, personal pages last
+- Updated all project statuses to May 2026 -->
+<p>9/4/25 - Major content update</p>
+<!-- - Fixed categories & tags on all posts
+- Put all images into folders to clean up file structure
+- Added weights to customize order of posts
+- Replaced old resume with the new one
+- Added PBA/SAE Aero/StarTrackerV2
+- Added framework for adding smaller projects from Middle/High school -->
+<p>4/21/25 - Minor tweaks</p>
+<!-- - Added updated resume
+- Fixed dates on all posts -->
+<p>3/8/25 - Initial portfolio created</p>
+<!-- - A4988 Project
+- Arduino Alarm Clock
+- Atmega32U4 devboard
+- Battery Charger
+- LF3DP
+- PC
+- Photography
+- Plasma cutter (RPS) -->
+
+  </details>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Contact Information</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Email: <a href="mailto:wmrohren@gmail.com" target="_blank">wmrohren@gmail.com</a>
+</p>
+<p>Resume: <a href="./Resume_5-13-26.pdf">here</a>
+ (last updated 5/13/26)</p>
+<p><a href="https://sites.google.com/view/willrohren/home" target="_blank">Google Sites Portfolio</a>
+
+<strong>Warning:</strong> There&rsquo;s a reason I abandoned the old portfolio &amp; remade it with Hugo.</p>
+<details>
+    <summary>Additional Reading</summary>
+    <p>It&rsquo;s because google sites kinda sucks in terms of how customizable it is. As you&rsquo;ll see if you visit my old portfolio, there&rsquo;s a navigation bar at the top, some with drop downs. But as far as the actual content goes, it&rsquo;s <em>really</em> space inefficient. Under &lsquo;Personal Projects &gt; Big Projects&rsquo;, to even see the <strong>SECOND</strong> item requires scrolling past <em>all</em> of the content in the first item.</p>
+<p>I didn&rsquo;t like it. So I thought of trying Hugo, and was given the idea by seeing other people using it (namely various Starforge members <a href="bwees.io">Brandon</a>
+ and <a href="https://ismailhozain.com/" target="_blank">Ismael</a>
+ to name two examples). I found a theme I liked, with blog-like posts and decided that was a suitable way to display my content.</p>
+<p>One last note about formatting, once I have a lot more projects under my belt, I&rsquo;d like to switch to a grid-like format, similar to one used by <a href="https://mitxela.com/projects" target="_blank">mitxela</a>
+</p>
+<p>Anyhow, the google sites portfolio linked above has a lot of my smaller projects on it. From 3D prints to school engineering club events, to VEX Robotics.</p>
+<p>I expect that I will make posts dedicated to grouping these together. This is relatively low priority right now though, since the projects I have been able to do in college have been much more impactful than the projects I did in middle or high school. This is mostly related to money, as working on the RPS is allowing me to spend my own money on projects.</p>
+
+  </details>
+<p>Feel free to email with any questions :)</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 Will&#39;s Portfolio</p>
+  
+
+  
+  <p class="text-sm">
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with 
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

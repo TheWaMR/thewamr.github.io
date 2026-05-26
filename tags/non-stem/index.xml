@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Non-STEM on Will&#39;s Portfolio</title>
-    <link>https://example.org/tags/non-stem/</link>
+    <link>/tags/non-stem/</link>
     <description>Recent content in Non-STEM on Will&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Feb 2025 02:58:52 -0600</lastBuildDate>
-    <atom:link href="https://example.org/tags/non-stem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/non-stem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photography</title>
-      <link>https://example.org/posts/photography/</link>
-      <pubDate>Thu, 27 Feb 2025 02:58:52 -0600</pubDate>
-      <guid>https://example.org/posts/photography/</guid>
-      <description>&lt;p&gt;Gallery of some cool/interesting photos I have taken&lt;/p&gt;</description>
+      <link>/posts/photography/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/posts/photography/</guid>
+      <description>&lt;p&gt;A gallery for the stuff that doesn&amp;rsquo;t earn its own project page: eclipses, fish, and the occasional sky shot.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

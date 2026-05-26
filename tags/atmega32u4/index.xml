@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ATmega32U4 on Will&#39;s Portfolio</title>
+    <link>/tags/atmega32u4/</link>
+    <description>Recent content in ATmega32U4 on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Feb 2025 08:52:58 -0600</lastBuildDate>
+    <atom:link href="/tags/atmega32u4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATmega32U4</title>
+      <link>/posts/atmega32u4_test/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/posts/atmega32u4_test/</guid>
+      <description>&lt;p&gt;A custom ATmega32U4 dev board designed in Altium, manufactured by JLCPCB. USB-C fought back. ICSP won.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V1.1 Complete!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

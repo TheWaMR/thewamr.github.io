@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Complete on Will&#39;s Portfolio</title>
+    <link>/tags/complete/</link>
+    <description>Recent content in Complete on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Apr 2026 00:40:14 -0500</lastBuildDate>
+    <atom:link href="/tags/complete/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAE Aero Design Team</title>
+      <link>/posts/sae_aero/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/posts/sae_aero/</guid>
+      <description>&lt;p&gt;My experience as an SMS (Structures &amp;amp; Materials Science) engineer on the Texas A&amp;amp;M SAE Aero Design Regular Class Team.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; &amp;lsquo;25–&amp;lsquo;26 Season Complete&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ATmega32U4</title>
+      <link>/posts/atmega32u4_test/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/posts/atmega32u4_test/</guid>
+      <description>&lt;p&gt;A custom ATmega32U4 dev board designed in Altium, manufactured by JLCPCB. USB-C fought back. ICSP won.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V1.1 Complete!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plasma Cutter</title>
+      <link>/posts/plasma/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/posts/plasma/</guid>
+      <description>&lt;p&gt;A Torchmate CNC plasma cutter sat unused for five years before landing in our shop. Then it became my problem to solve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Fully operational and optimized. SOP published, four staff trained.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ITX Computer Build</title>
+      <link>/posts/pc/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/posts/pc/</guid>
+      <description>&lt;p&gt;My old prebuilt desktop spent its last six months refusing to POST. When it finally gave up for good, I built its replacement from scratch. ITX form factor, no RGB, designed to fit on a shelf above a small apartment desk.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Complete. Built May 2024. Roughly $2,930 all-in for the initial build.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

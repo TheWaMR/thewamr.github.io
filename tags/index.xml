@@ -2,52 +2,367 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Will&#39;s Portfolio</title>
-    <link>https://example.org/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Will&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2025 18:49:33 -0600</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2026 23:56:48 -0600</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tag1</title>
-      <link>https://example.org/tags/tag1/</link>
-      <pubDate>Thu, 27 Feb 2025 18:49:33 -0600</pubDate>
-      <guid>https://example.org/tags/tag1/</guid>
+      <title>3D Printing</title>
+      <link>/tags/3d-printing/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/3d-printing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tag2</title>
-      <link>https://example.org/tags/tag2/</link>
-      <pubDate>Thu, 27 Feb 2025 18:49:33 -0600</pubDate>
-      <guid>https://example.org/tags/tag2/</guid>
+      <title>Aluminum Extrusion</title>
+      <link>/tags/aluminum-extrusion/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/aluminum-extrusion/</guid>
       <description></description>
     </item>
     <item>
-      <title>Non-STEM</title>
-      <link>https://example.org/tags/non-stem/</link>
-      <pubDate>Thu, 27 Feb 2025 02:58:52 -0600</pubDate>
-      <guid>https://example.org/tags/non-stem/</guid>
+      <title>Autoclave</title>
+      <link>/tags/autoclave/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/autoclave/</guid>
       <description></description>
     </item>
     <item>
-      <title>Electronics</title>
-      <link>https://example.org/tags/electronics/</link>
-      <pubDate>Wed, 26 Feb 2025 22:32:34 -0600</pubDate>
-      <guid>https://example.org/tags/electronics/</guid>
+      <title>Binder Jet</title>
+      <link>/tags/binder-jet/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/binder-jet/</guid>
       <description></description>
     </item>
     <item>
-      <title>PCB Design</title>
-      <link>https://example.org/tags/pcb-design/</link>
-      <pubDate>Wed, 26 Feb 2025 22:32:34 -0600</pubDate>
-      <guid>https://example.org/tags/pcb-design/</guid>
+      <title>CAD</title>
+      <link>/tags/cad/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/cad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CoreXY</title>
+      <link>/tags/corexy/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/corexy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lab Project</title>
+      <link>/tags/lab-project/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/lab-project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sheet Metal</title>
+      <link>/tags/sheet-metal/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/sheet-metal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shelved</title>
+      <link>/tags/shelved/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/shelved/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SolidWorks</title>
+      <link>/tags/solidworks/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/solidworks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Texas A&amp;M</title>
+      <link>/tags/texas-am/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/tags/texas-am/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansys</title>
+      <link>/tags/ansys/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/ansys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Balsa</title>
+      <link>/tags/balsa/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/balsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Complete</title>
+      <link>/tags/complete/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/complete/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FEA</title>
+      <link>/tags/fea/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/fea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SAE Aero</title>
+      <link>/tags/sae-aero/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/sae-aero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Structures</title>
+      <link>/tags/structures/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topology Optimization</title>
+      <link>/tags/topology-optimization/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/tags/topology-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>/tags/about/</link>
+      <pubDate>Mon, 10 Feb 2025 23:56:48 -0600</pubDate>
+      <guid>/tags/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CNC</title>
+      <link>/tags/cnc/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/tags/cnc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>/tags/documentation/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/tags/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plasma Cutting</title>
+      <link>/tags/plasma-cutting/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/tags/plasma-cutting/</guid>
       <description></description>
     </item>
     <item>
       <title>RPS</title>
-      <link>https://example.org/tags/rps/</link>
-      <pubDate>Tue, 25 Feb 2025 11:24:33 -0600</pubDate>
-      <guid>https://example.org/tags/rps/</guid>
+      <link>/tags/rps/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/tags/rps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CNC Machining</title>
+      <link>/tags/cnc-machining/</link>
+      <pubDate>Thu, 24 Oct 2024 02:58:46 -0600</pubDate>
+      <guid>/tags/cnc-machining/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Handed Off</title>
+      <link>/tags/handed-off/</link>
+      <pubDate>Thu, 24 Oct 2024 02:58:46 -0600</pubDate>
+      <guid>/tags/handed-off/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Altium</title>
+      <link>/tags/altium/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/altium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JLCPCB</title>
+      <link>/tags/jlcpcb/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/jlcpcb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PCB Design</title>
+      <link>/tags/pcb-design/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/pcb-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal Project</title>
+      <link>/tags/personal-project/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/personal-project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shift Register</title>
+      <link>/tags/shift-register/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/shift-register/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stepper Motors</title>
+      <link>/tags/stepper-motors/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/tags/stepper-motors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ATmega32U4</title>
+      <link>/tags/atmega32u4/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/tags/atmega32u4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bare-Metal</title>
+      <link>/tags/bare-metal/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/tags/bare-metal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hand Assembly</title>
+      <link>/tags/hand-assembly/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/tags/hand-assembly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microcontroller</title>
+      <link>/tags/microcontroller/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/tags/microcontroller/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>USB-C</title>
+      <link>/tags/usb-c/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/tags/usb-c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>/tags/hardware/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ITX</title>
+      <link>/tags/itx/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/tags/itx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PC Build</title>
+      <link>/tags/pc-build/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/tags/pc-build/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Battery Management</title>
+      <link>/tags/battery-management/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/tags/battery-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Electronics</title>
+      <link>/tags/power-electronics/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/tags/power-electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arduino</title>
+      <link>/tags/arduino/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/tags/arduino/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>/tags/esp32/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>I2C</title>
+      <link>/tags/i2c/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/tags/i2c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>In Progress</title>
+      <link>/tags/in-progress/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/tags/in-progress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KiCAD</title>
+      <link>/tags/kicad/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/tags/kicad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Astrophotography</title>
+      <link>/tags/astrophotography/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/tags/astrophotography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eclipse</title>
+      <link>/tags/eclipse/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/tags/eclipse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fishing</title>
+      <link>/tags/fishing/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/tags/fishing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Non-STEM</title>
+      <link>/tags/non-stem/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/tags/non-stem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>/tags/travel/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/tags/travel/</guid>
       <description></description>
     </item>
   </channel>

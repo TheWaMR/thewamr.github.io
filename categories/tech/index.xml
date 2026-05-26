@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Will&#39;s Portfolio</title>
+    <link>/categories/tech/</link>
+    <description>Recent content in Tech on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2025 03:12:56 -0600</lastBuildDate>
+    <atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ITX Computer Build</title>
+      <link>/posts/pc/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/posts/pc/</guid>
+      <description>&lt;p&gt;My old prebuilt desktop spent its last six months refusing to POST. When it finally gave up for good, I built its replacement from scratch. ITX form factor, no RGB, designed to fit on a shelf above a small apartment desk.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Complete. Built May 2024. Roughly $2,930 all-in for the initial build.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

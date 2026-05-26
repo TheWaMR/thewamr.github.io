@@ -2,74 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Will&#39;s Portfolio</title>
-    <link>https://example.org/</link>
+    <link>/</link>
     <description>Recent content on Will&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2025 18:49:33 -0600</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2026 23:56:48 -0600</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First post</title>
-      <link>https://example.org/posts/first_post/</link>
+      <title>First Post</title>
+      <link>/posts/first_post/</link>
       <pubDate>Mon, 10 Feb 2025 23:56:48 -0600</pubDate>
-      <guid>https://example.org/posts/first_post/</guid>
-      <description>&lt;p&gt;Howdy! There&amp;rsquo;s nothing too interesting on this page, feel free to look around!&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&#34;color: maroon;&#34;&gt;Color&lt;/span&gt; &lt;span style=&#34;color: white;&#34;&gt;Test!&lt;/span&gt;&lt;/p&gt;</description>
+      <guid>/posts/first_post/</guid>
+      <description>&lt;!--&#xA;How to use hugo:&#xA;open VSCode &amp; type cd WillR_Portfolio to pput the terminal&#xA;in that folder. you may need to do cd C:\ then cd Hugo/WillR_Portfolio&#xA;&#xA;Then, make edits to the markdown files in the content folder&#xA;then use hugo server -D to post the server with the draft pages included&#xA;&#xA;Ctrl + C to stop the server, Ctrl + S to reload (if any changes were made)&#xA;&#xA;STILL NEED TO FIGURE OUT:&#xA;use &#34;hugo new posts/[folder]/index.md&#34; to add a new page in a new folder&#xA;i.e. hugo new posts/RPS/index.md&#xA;&#xA;**BEFORE I ADD ANY OF THESE:&#xA;I SHOULD GO INTO CONFIG.TOML AND ADD DEFAULT AUTHOR / AVATAR / other things&#xA;https://hugo-theme-dream.g1en.site/params-configurations#:~:text=author%20%3D%20%22g1eny0ung,%E4%B8%8D%E5%A6%82%E9%A9%AC%E4%B8%8A%E5%87%BA%E5%8F%91%E3%80%82%22&#xA;&#xA;&#xA;C:\Hugo\WillR_Portfolio\themes\hugo-theme-dream-master\config.toml&#xA;that&#39;s to edit params and stuff&#xA;&#xA;hugo new posts/Alarmclock/index.md&#xA;hugo new posts/PC/index.md&#xA;hugo new posts/Battery_Charger/index.md&#xA;hugo new posts/Plasma_Cutter/index.md&#xA;hugo new posts/LF3DP/index.md&#xA;hugo new posts/Photography/index.md&#xA;hugo new posts/A4988/index.md&#xA;&#xA;&#xA;then put images in the folder (this is called a branch)&#xA;&#xA;Use # to create a heading (regular markdown stuff), this will separate &#xA;the preview section of the page from everything else&#xA;&#xA;https://g1en.site/categories/&#xA;https://github.com/g1eny0ung/blog/blob/master/data/socials.toml&#xA;https://hugo-theme-dream.g1en.site/summary-images&#xA;https://www.markdownguide.org/cheat-sheet/&#xA;&#xA;https://azleslie.com/projects/hugo-tutorial/&#xA;&#xA;add lots more content&#xA;&#xA;HOW TO DEPLOY STUFF TO THE SITE (updating)&#xA;&#xA;make changes (to the files in Documents &gt; Hugofiles &gt; WillR-Portfolio &gt; content)&#xA;&#xA;save all&#xA;&#xA;make a backup somewhere &#xA;&#xA;open CMD as cd ..administrator &#xA;&#xA;cd into C:/Users/wmroh/Documents/Hugofiles/WillR-Portfolio &#xA;use &#39;cd ..&#39; to go back one level if needed&#xA;&#xA;do&#xA;deploy.sh &#34;[insert commit message]&#34; (just a comment)&#xA;&#xA;OR&#xA;&#xA;do the following commands in order:&#xA;hugo&#xA;cd public &#xA;git add .&#xA;git commit -m &#34;[insert commit message]&#34;&#xA;git push origin main&#xA;&#xA;make sure &#xA;# &lt;a href=&#34;/&#34;&gt;Back to Home Page&lt;/a&gt;&#xD;&#xA;&#xA;is on the top and bottom of every page for navigation. I wish there was a better way, but this will do (until im not burnt out of github anymore)&#xA;&#xA;&#xA;Also, about images. for some reason, some images are processed as &#34;[name].JPG&#34; instead of &#34;[name].jpg&#34;. This capitalization screws with everything. IT&#39;S SO STUPID. if you notice broken images, don&#39;t bother changing the file extension manually, just go into the markdown file and change the image call to the capital JPG. &#xA;&#xA;it&#39;s dumb but that&#39;s how it works.&#xA;&#xA;also also&#xA;putting&#xA;&#xA;[markup.goldmark.renderer]&#xA;unsafe = true&#xA;&#xA;in hugo.toml may solve the issues with putting raw html in there&#xA;(can&#39;t remember if it&#39;s true or false, idk)&#xA;&#xA;&lt;span style=&#34;color: maroon;&#34;&gt;Color&lt;/span&gt; &lt;span style=&#34;color: white;&#34;&gt;Test!&lt;/span&gt;&#xA;&#xA;Tags:&#xA;- Skills/tools: PCB Design · Altium · KiCAD · SolidWorks · Ansys · Femap · FEA · Topology Optimization · CAD · CNC Machining · Plasma Cutting · 3D Printing · Sheet Metal · Aluminum Extrusion · Soldering · Hand Assembly&#xA;- Topics: Microcontroller · Bare-Metal · ATmega32U4 · ESP32 · Arduino · USB-C · I2C · Stepper Motors · Shift Register · Battery Management · Power Electronics · Mixed-Signal · Binder Jet · Autoclave · CoreXY · Structures · Balsa · Aerodynamics&#xA;- Context: JLCPCB · Texas A&amp;M · SAE Aero · RPS · Lab Project · Personal Project · Documentation&#xA;- Status: Complete · In Progress · Shelved · Handed Off&#xA;&#xA;Categories:&#xA;- Electronics&#xA;- Mechanical&#xA;- Aerospace&#xA;- Shop&#xA;&#xA;--&gt;&#xA;&lt;p&gt;Howdy! I&amp;rsquo;m Will, a mechanical engineering student at Texas A&amp;amp;M. I also spend a lot of my time on electronics and embedded systems, plus anything else where I get to design something from scratch.&lt;/p&gt;&#xA;&lt;p&gt;This site is a portfolio and a logbook. Projects are ordered with the most substantial work at the top. Click through any of them for the full story.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SAE Aero Design Team</title>
+      <link>/posts/sae_aero/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/posts/sae_aero/</guid>
+      <description>&lt;p&gt;My experience as an SMS (Structures &amp;amp; Materials Science) engineer on the Texas A&amp;amp;M SAE Aero Design Regular Class Team.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; &amp;lsquo;25–&amp;lsquo;26 Season Complete&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PBA (Custom BJT 3D Printer)</title>
+      <link>/posts/pba/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/posts/pba/</guid>
+      <description>&lt;p&gt;A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ATmega32U4</title>
+      <link>/posts/atmega32u4_test/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/posts/atmega32u4_test/</guid>
+      <description>&lt;p&gt;A custom ATmega32U4 dev board designed in Altium, manufactured by JLCPCB. USB-C fought back. ICSP won.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V1.1 Complete!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alarm Clock</title>
+      <link>/posts/alarmclock/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/posts/alarmclock/</guid>
+      <description>&lt;p&gt;My iPhone&amp;rsquo;s alarm stopped going off one too many times. So naturally, I tried to build my own. Many lessons learned later, I have the tools to soon make my return to this project.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V3 tentatively planned for Summer &amp;lsquo;26&lt;/p&gt;</description>
     </item>
     <item>
       <title>A4988 Stepper Motor Controller</title>
-      <link>https://example.org/posts/a4988/</link>
-      <pubDate>Thu, 27 Feb 2025 18:49:33 -0600</pubDate>
-      <guid>https://example.org/posts/a4988/</guid>
-      <description>&lt;p&gt;Goal: Learn about higher-powered digital electronics, and PCB design for integrated boards. This PCB was designed with my Atmega32U4 project in mind.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; I hit a wall :/&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ITX Computer Build</title>
-      <link>https://example.org/posts/pc/</link>
-      <pubDate>Thu, 27 Feb 2025 03:12:56 -0600</pubDate>
-      <guid>https://example.org/posts/pc/</guid>
-      <description>&lt;p&gt;Custom building my own ITX desktop computer&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Complete!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Photography</title>
-      <link>https://example.org/posts/photography/</link>
-      <pubDate>Thu, 27 Feb 2025 02:58:52 -0600</pubDate>
-      <guid>https://example.org/posts/photography/</guid>
-      <description>&lt;p&gt;Gallery of some cool/interesting photos I have taken&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>LF3DP</title>
-      <link>https://example.org/posts/lf3dp/</link>
-      <pubDate>Thu, 27 Feb 2025 02:58:46 -0600</pubDate>
-      <guid>https://example.org/posts/lf3dp/</guid>
-      <description>&lt;p&gt;Adapting Dr. D Flo&amp;rsquo;s Large Format 3D Printer (LF3DP) build for the RPS&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Work in Progress&lt;/p&gt;</description>
+      <link>/posts/a4988/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/posts/a4988/</guid>
+      <description>&lt;p&gt;A custom four-channel A4988 stepper driver board, designed mostly so I could batch-order another PCB that month. Adafruit sells the same chip on a breakout for $5. That&amp;rsquo;s the lesson.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Built, never got a stepper to move with it. Retired in favor of off-the-shelf driver modules.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Li-ion Battery Charger</title>
-      <link>https://example.org/posts/battery_charger/</link>
-      <pubDate>Thu, 27 Feb 2025 02:51:52 -0600</pubDate>
-      <guid>https://example.org/posts/battery_charger/</guid>
-      <description>&lt;p&gt;Goal: Build my own 18650 Lithium-ion interface for later projects. Functionalities should include battery regulation, standard safety features, and a boost converter able to provide 5/12V. Learn about simple battery management systems.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Back-Burner&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Alarm_clock</title>
-      <link>https://example.org/posts/alarmclock/</link>
-      <pubDate>Wed, 26 Feb 2025 22:32:34 -0600</pubDate>
-      <guid>https://example.org/posts/alarmclock/</guid>
-      <description>&lt;p&gt;Goal: to learn about microcontroller integration &amp;amp; usage in electronics projects.&lt;/p&gt;&#xA;&lt;p&gt;To use an Arduino nano / ESP32 with a RTC module to create a functional alarm clock.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Abandoned :(&lt;/p&gt;&#xA;&lt;p&gt;(I plan on coming back to this later)&lt;/p&gt;</description>
+      <link>/posts/battery_charger/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/posts/battery_charger/</guid>
+      <description>&lt;p&gt;A custom single-cell Li-ion charger / boost / protection PCB. Worked for charging. Worked for boosting. The protection circuit got the MOSFET backwards.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved January 2025. Replaced by off-the-shelf modules for the projects I would&amp;rsquo;ve used it on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Plasma Cutter</title>
-      <link>https://example.org/posts/plasma/</link>
-      <pubDate>Tue, 25 Feb 2025 11:24:33 -0600</pubDate>
-      <guid>https://example.org/posts/plasma/</guid>
-      <description>&lt;p&gt;Resurrecting an abandoned Torchmate CNC Plasma Cutter for TAMU MEEN Dept.&lt;/p&gt;&#xA;&lt;p&gt;Goal: Learn about, fix, and document the process of using a CNC plasma cutter for students &amp;amp; staff to use&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Build Complete! Still working on improvements&lt;/p&gt;</description>
+      <link>/posts/plasma/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/posts/plasma/</guid>
+      <description>&lt;p&gt;A Torchmate CNC plasma cutter sat unused for five years before landing in our shop. Then it became my problem to solve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Fully operational and optimized. SOP published, four staff trained.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Atmega32U4</title>
-      <link>https://example.org/posts/atmega32u4_test/</link>
-      <pubDate>Fri, 21 Feb 2025 08:52:58 -0600</pubDate>
-      <guid>https://example.org/posts/atmega32u4_test/</guid>
-      <description>&lt;p&gt;Goal:&#xA;To create my own microcontroller devboard based on the Atmega32U4&lt;/p&gt;&#xA;&lt;p&gt;To learn about embedded systems, designing PCB for digital circuitry,&#xA;and programming/debugging the board.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  Work In Progress&lt;/p&gt;</description>
+      <title>LF3DP</title>
+      <link>/posts/lf3dp/</link>
+      <pubDate>Thu, 24 Oct 2024 02:58:46 -0600</pubDate>
+      <guid>/posts/lf3dp/</guid>
+      <description>&lt;p&gt;A large format pellet-extrusion 3D printer built at the RPS, based on Dr. D. Flo&amp;rsquo;s open-source LF3DP design. I owned the gantry build through early 2025, then handed it off.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Partial assembly. X-axis carriage built, waiting on machinist to trim the C-channel extrusion and install electronics. Will not finish before I graduate.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Photography</title>
+      <link>/posts/photography/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/posts/photography/</guid>
+      <description>&lt;p&gt;A gallery for the stuff that doesn&amp;rsquo;t earn its own project page: eclipses, fish, and the occasional sky shot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ITX Computer Build</title>
+      <link>/posts/pc/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/posts/pc/</guid>
+      <description>&lt;p&gt;My old prebuilt desktop spent its last six months refusing to POST. When it finally gave up for good, I built its replacement from scratch. ITX form factor, no RGB, designed to fit on a shelf above a small apartment desk.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Complete. Built May 2024. Roughly $2,930 all-in for the initial build.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

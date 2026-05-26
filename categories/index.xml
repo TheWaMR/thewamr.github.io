@@ -2,31 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Will&#39;s Portfolio</title>
-    <link>https://example.org/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Will&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2025 18:49:33 -0600</lastBuildDate>
-    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2026 23:56:48 -0600</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Category1</title>
-      <link>https://example.org/categories/category1/</link>
-      <pubDate>Thu, 27 Feb 2025 18:49:33 -0600</pubDate>
-      <guid>https://example.org/categories/category1/</guid>
+      <title>Mechanical</title>
+      <link>/categories/mechanical/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/categories/mechanical/</guid>
       <description></description>
     </item>
     <item>
-      <title>RPS</title>
-      <link>https://example.org/categories/rps/</link>
-      <pubDate>Thu, 27 Feb 2025 02:58:46 -0600</pubDate>
-      <guid>https://example.org/categories/rps/</guid>
+      <title>Aerospace</title>
+      <link>/categories/aerospace/</link>
+      <pubDate>Mon, 26 May 2025 00:40:14 -0500</pubDate>
+      <guid>/categories/aerospace/</guid>
       <description></description>
     </item>
     <item>
-      <title>Electronicss</title>
-      <link>https://example.org/categories/electronicss/</link>
-      <pubDate>Wed, 26 Feb 2025 22:32:34 -0600</pubDate>
-      <guid>https://example.org/categories/electronicss/</guid>
+      <title>Personal</title>
+      <link>/categories/personal/</link>
+      <pubDate>Mon, 10 Feb 2025 23:56:48 -0600</pubDate>
+      <guid>/categories/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shop</title>
+      <link>/categories/shop/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/categories/shop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>/categories/electronics/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/categories/electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>/categories/tech/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photography</title>
+      <link>/categories/photography/</link>
+      <pubDate>Fri, 28 Feb 2020 02:58:52 -0600</pubDate>
+      <guid>/categories/photography/</guid>
       <description></description>
     </item>
   </channel>

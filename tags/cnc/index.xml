@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNC on Will&#39;s Portfolio</title>
+    <link>/tags/cnc/</link>
+    <description>Recent content in CNC on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2025 11:24:33 -0600</lastBuildDate>
+    <atom:link href="/tags/cnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plasma Cutter</title>
+      <link>/posts/plasma/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/posts/plasma/</guid>
+      <description>&lt;p&gt;A Torchmate CNC plasma cutter sat unused for five years before landing in our shop. Then it became my problem to solve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Fully operational and optimized. SOP published, four staff trained.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

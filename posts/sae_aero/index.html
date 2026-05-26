@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE Aero Design Team | Will&#39;s Portfolio</title>
+
+    
+
+<link rel="canonical" href="/posts/sae_aero/" />
+
+
+
+<meta name="author" content="Will Rohren" />
+<meta name="description" content="My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.
+STATUS: &lsquo;25–&lsquo;26 Season Complete
+" />
+
+
+<meta name="keywords" content="SolidWorks,Ansys,FEA,Topology Optimization,Structures,Balsa,CAD,SAE Aero,Texas A&amp;M,Complete">
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="/posts/sae_aero/">
+  <meta property="og:site_name" content="Will&#39;s Portfolio">
+  <meta property="og:title" content="SAE Aero Design Team">
+  <meta property="og:description" content="My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.
+STATUS: ‘25–‘26 Season Complete">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-26T00:40:14-05:00">
+    <meta property="article:modified_time" content="2026-04-13T00:40:14-05:00">
+    <meta property="article:tag" content="SolidWorks">
+    <meta property="article:tag" content="Ansys">
+    <meta property="article:tag" content="FEA">
+    <meta property="article:tag" content="Topology Optimization">
+    <meta property="article:tag" content="Structures">
+    <meta property="article:tag" content="Balsa">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SAE Aero Design Team">
+  <meta name="twitter:description" content="My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.
+STATUS: ‘25–‘26 Season Complete">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/face_zoomed.png" alt="" />
+        </div>
+      </div>
+
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+          
+
+          
+        </ul>
+      </div>
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="SAE Aero Design Team">
+  <meta itemprop="description" content="My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.
+STATUS: ‘25–‘26 Season Complete">
+  <meta itemprop="datePublished" content="2025-05-26T00:40:14-05:00">
+  <meta itemprop="dateModified" content="2026-04-13T00:40:14-05:00">
+  <meta itemprop="wordCount" content="2707">
+  <meta itemprop="keywords" content="SolidWorks,Ansys,FEA,Topology Optimization,Structures,Balsa,CAD,SAE Aero,Texas A&amp;M,Complete">
+
+      <header>
+        <h1 itemprop="headline">SAE Aero Design Team</h1>
+        <p class="text-sm">
+          
+            Monday, May 26, 2025
+          
+
+          | <span>13 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Monday, Apr 13, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=SAE%20Aero%20Design%20Team&amp;url=/posts/sae_aero/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=/posts/sae_aero/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=SAE%20Aero%20Design%20Team%20/posts/sae_aero/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <p>My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.</p>
+<p><strong>STATUS:</strong> &lsquo;25–&lsquo;26 Season Complete</p>
+<h1 id="hahahugoshortcode16s0hbhb"><a href="/">Back to Home Page</a>
+</h1>
+<p>Cover image taken by <a href="https://www.linkedin.com/in/luis-albos/overlay/contact-info/" target="_blank">Luis Albos!</a>
+</p>
+<h3 id="what-is-sae-aero">What is SAE Aero?</h3>
+<p>SAE Aero Design is an international engineering competition where student teams design, build, and fly radio-controlled aircraft within a defined ruleset. Anyone can build something that flies. The actual goal is to maximize a scoring function that rewards payload capacity, structural efficiency, and design documentation quality. Every gram you shave off the airframe is a gram you can put in the payload bay.</p>
+<h3 id="what-class-whats-sms">What class? What&rsquo;s SMS?</h3>
+<details>
+    <summary><strong>Read more background info</strong></summary>
+    <h4 id="the-three-classes">The Three Classes</h4>
+<p><strong>Regular Class (my team)</strong> is the heavy-lift division. This year&rsquo;s constraints: 10 ft wingspan limit, 2200 mAh battery, and either two motors with 12&quot; propellers or four motors with 9&quot; propellers. Our team ran the two-motor configuration. The scoring formula awards 4 points per empty bottle carried and 15 points per filled bottle, averaged across your top three flights. So maximizing bottle count is the primary objective, and bottle count is ultimately a function of internal volume, which means obsessing over structural efficiency at every level to free up as much fuselage space as possible.</p>
+<p><strong>Micro Class</strong> is the nimble flyer division, penalizing excessive wingspan and rewarding short takeoff distances under 10 ft while carrying a liquid payload.</p>
+<p><strong>Advanced Class</strong> is the autonomous systems division, rewarding planes that can use onboard telemetry to deliver a payload to a GPS-designated target.</p>
+<h4 id="whats-sms">What&rsquo;s SMS?</h4>
+<p>The team is organized into two engineering disciplines: <strong>ASC</strong> (Aerodynamics, Stability &amp; Controls) and <strong>SMS</strong> (Structures &amp; Materials Science). ASC owns the aerodynamic design: airfoil selection, wing sizing, stability analysis. SMS owns everything structural: fuselage, nose, wing spars, empennage, and making sure none of it fails under load. I joined as an SMS engineer, and by the time competition season rolled around, the nose structure had become my primary ownership area.</p>
+
+  </details>
+<p><img src="Images/Reg_Team_Pic.png" alt="Regular class team picture">
+<em>Regular class team picture post-competition</em></p>
+<hr>
+<h3 id="2526-season-timeline">&lsquo;25–&lsquo;26 Season Timeline</h3>
+<details>
+    <summary><strong>Summer-Fall Training (May – Mid October 2025)</strong></summary>
+    <p>I joined the team in late May with zero prior aerospace structures experience. The first few weeks were sort of a ramp-up: getting comfortable with the Solidworks practices (body coordinate system), functions (weldments), and above-all practicing modeling these structures. With so many solid bodies, Solidworks models can end up &ldquo;breaking&rdquo; if care isn&rsquo;t taken when modeling.</p>
+<p><img src="Images/Summer_Training.PNG" alt="Summer Training Airfoil CAD"></p>
+<p>On the analysis side, I started in <strong>Femap</strong> for Finite Element Analysis (FEA) for running my first structural simulation on the center section. Somewhere around late June I switched over to <strong>Ansys Mechanical</strong> for the main wing analysis, which I found easier to set up, with a shallower learning curve than Femap.</p>
+<p><img src="Images/Femap_CS_FEA.PNG" alt="Summer Training Center Section Femap FEA"></p>
+<p>The 2026 ruleset was released in late August, and from there the ASC team went into full tilt on making our planform. Choosing an airfoil, selecting a power train, averaging weather conditions in Florida, sizing control surfaces, modeling dynamics, and everything else that goes into plane design. During this time, I looked into Ansys&rsquo; topology optimization (Top Opt), because one of our members, Harrison Harding, found that adding wingplates to our plane would decrease drag, and increase efficiency, which would eventually lead to more points.</p>
+<p>Wingplates posed a big structural problem, though, since they potentially can add a lot of mass to the wingtips, which would increase our moment of inertia. To solve this, I intended on letting Ansys suggest a structure layout for me. After no less than 50 different attempts over roughly 60 hours of work, I kinda hit a wall, and was forced to conclude that Top Opt was not capable of generating wingplate solutions. That being the case, I still benefited massively from the experience.</p>
+<p><img src="Images/Wingplate_Attempts.png" alt="Failed Wingplate Top Opt"></p>
+
+  </details>
+<details>
+    <summary><strong>XP1 Build (October – January 2026)</strong></summary>
+    <h4 id="the-nose-beam-concept">The Nose Beam Concept</h4>
+<p>Eventually, we got to our Critical Design Review, and our project advisor rightly called us out on reusing CAD from the previous year. To summarize, we had a few members that did not follow through on their tasks, which forced the officers into using old 3D models. After reaching late October with only hand-drawn sketches to show for motor-connection ideas, our chief officer, Edward Eiche, assigned me the task of figuring out how we were <em>actually</em> going to mount the motors to our plane. He helped me isolate the task, and we decided that mounting them to the nose was optimal, since I could work on that independently, while other members were actively working on the main wing. As such, the &ldquo;Silly Member&rdquo; was born, and for the rest of the year I would have sole ownership of the design of the nose.</p>
+<p><img src="Images/Silly_Member.png" alt="Nose Beam Idea Conception: &ldquo;Silly Member&rdquo;"></p>
+<p>After a lot of back-and-forth discussions to weigh the Aerodynamic and Structural pros/cons, we decided that it was a route worth going down. So I set out to make the best nose SAE Aero has ever seen.</p>
+<h4 id="applying-topology-optimization-this-time-it-worked">Applying Topology Optimization (This Time It Worked)</h4>
+<p>After spending so much time with Top Opt on the wingplates, I found that the nose was a much better use-case, and it was a really quick setup process, relatively speaking. With topology optimization, the idea is not to directly use its output solution as the final model, since we cannot get our balsa wood to exactly match its organic contours. Part of the work in post processing is to model a manufacturable version of the solution it comes up with, which is shown below.</p>
+<p><img src="Images/XP1_Nose_TopOpt.png" alt="XP1 Nose Top Opt"></p>
+<h4 id="fea-on-xp1-nose">FEA on XP1 Nose</h4>
+<p>With my initial nose CAD, I ran the Ansys FEA with two independent load cases:</p>
+<ul>
+<li><strong>Landing load</strong>: 25 lbf upward at the nose gear attachment point</li>
+<li><strong>Motor load</strong>: 12 lbf on each motor plate in the thrust direction
+Results on the first iteration:</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Load Case</th>
+          <th>Max Von Mises Stress</th>
+          <th>Yield Strength</th>
+          <th>FoS</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Landing</td>
+          <td>894 psi</td>
+          <td>~2000 psi</td>
+          <td>2.24</td>
+      </tr>
+      <tr>
+          <td>Motor Thrust</td>
+          <td>737 psi</td>
+          <td>~2000 psi</td>
+          <td>2.70</td>
+      </tr>
+  </tbody>
+</table>
+<p>The stress concentrations showed up at the motor spar interfaces, which was expected. Conclusion from that run: go back to 0.25&quot; balsa longerons, which brought the final design stress down to ~750 psi with a margin of safety of 0.85. That&rsquo;s above the team&rsquo;s structural MoS requirement of 0.2.</p>
+<p><img src="Images/XP1_Nose_Landing_Load.png" alt="XP1 FEA stress contour">
+<em>Ansys Von Mises stress contour, landing load case. Max stress at motor spar connection.</em></p>
+<h4 id="xp1-build--flight-test">XP1 Build &amp; Flight Test</h4>
+<p>We built the XP1 nose and integrated it with the center section. XP1 flew well. It&rsquo;s hard for me to quantify just how well it flew as a mechanical engineer (plus I was on winter vacation for all the flight tests), but it was so good that we removed the wingplates to verify the CFD data, and we loaded it 5 lbs above its designed MTOW. We ended up crashing that flight, due to an aerodynamic failure (not enough lift), which led to a rapid unplanned disassembly.</p>
+<p><img src="Images/XP1_Flying.jpg" alt="XP1 Flying Without Wingplates">
+<em>Picture of XP1 flying without wingplates</em></p>
+<p><img src="Images/XP1_Crashed.jpg" alt="XP1 Crashed">
+<em>Picture of XP1 after crashing at 45 lbs MTOW</em></p>
+
+  </details>
+<details>
+    <summary><strong>XP2 / CP1 (January – March 2026)</strong></summary>
+    <p>After the success we had with XP1, ASC went back to the design phase and made some major revisions to the airfoil, empennage, nose, and control surface sizings. The proportions of the fuselage underwent some big changes, as well as using a new custom airfoil.</p>
+<ul>
+<li>Tail boom 61&quot; &raquo; 38.3&quot;</li>
+<li>Nose 12&quot; &raquo; 24&quot;</li>
+<li>Center Section 42&quot; &raquo; 48&quot;</li>
+</ul>
+<p>Since I had pioneered the design of the XP1 nose, my task over winter break was to design the new nose for XP2. From my vacation in Minnesota, I was able to prepare the Ansys setup on my laptop, transfer those files to my desktop in College Station, and run it there.</p>
+<hr>
+<p><img src="Images/XP2_Nose_Topop_Setup.png" alt="XP2 Nose Topop Setup">
+<em>Ansys setup for nose topology optimization</em></p>
+<hr>
+<p><img src="Images/XP2_Nose_Topop.gif" alt="XP2 Nose Topop GIF">
+<em>XP2 nose topology optimization solve gif</em></p>
+<hr>
+<p><img src="Images/XP2_Nose_Topop_CAD.png" alt="XP2 Nose Topop CAD">
+<em>XP2 nose CAD post top opt (post processing)</em></p>
+<hr>
+<p>Topology optimization was attempted on the top/bottom plates of the nose, though the setup does not contain any side loading, so the results weren&rsquo;t very impactful. Instead the top/bottom plate designs were motivated from the need for hatches in order to access the electronics, and to place a 4 lb ballast bottle in the very front of the plane to help the placement of the center of gravity.</p>
+<hr>
+<p><img src="Images/XP2_Nose_CAD_Final.png" alt="Final Nose CAD (V11)">
+<em>XP2_Nose_WR_V11.SLDPRT - Final version of the Nose for XP2/CP1-2</em></p>
+<hr>
+<p>With the nose updated, and the other members having similarly updated the designs for the center section, main wing, and empennage structures, we had our eXperimental Plane 2 (XP2).</p>
+<p><img src="Images/XP2_XP1_Compare.png" alt="XP1 &amp; XP2">
+<em>XP1 (left) and XP2 (right) side-by-side</em></p>
+<p>XP2 flew well enough that it got promoted: it became <strong>CP1</strong>, Competition Plane 1.</p>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/sae_aero/Videos/CP1_Takeoff.mp4" type="video/mp4">
+</video>
+</figure>
+*CP1 Taking off during the Feb 21 flight test*
+<hr>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/sae_aero/Videos/CP1_Landing.mp4" type="video/mp4">
+</video>
+</figure>
+*CP1 Landing during the Feb 21 flight test*
+<hr>
+
+  </details>
+<details>
+    <summary><strong>CP2 Build &amp; Pre-Competition Crash (February – March 2026)</strong></summary>
+    <p>As a precautionary measure before going to competition, we&rsquo;ve historically built at least two planes so that if there were to be an &ldquo;<em>unexpected rapid disassembly</em>&rdquo; that we can still have a plane to score points with. This also provides the opportunity for us to be more efficient/optimized with the construction of the plane, since we would have already solved all of the design problems that inevitably arise. Every little bit matters for this competition, down to how many drops of superglue are used on each joint of each rib.</p>
+<p>Our school was selected to participate in the SAE Aero East division, whose competition was slated for March 6-8th, which is <strong>EXTREMELY</strong> early compared to other years (normally it doesn&rsquo;t take place until May). One of my biggest frustrations with SAE Aero was how rushed our timeline was due to the early competition. XP2/CP1 build was done by January 28th, at which point CP2 build was started. The goal was to have CP2 done and ready to fly at least a week before competition so that we could have time to test-fly it in College Station to verify everything worked.</p>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/sae_aero/Videos/Wing_Shop_Timelapse_final.mp4" type="video/mp4">
+</video>
+</figure>
+*All hands on-deck in the shop to get CP2 ready to fly (7,500X speed)*
+<hr>
+<p>We took our time with the construction of CP2 since we wanted everything to be done right, so the build went all the way up to our last flight-test window on Saturday February 28th, three days before we wanted to have the trailer all packed up and rolling towards Florida. To summarize, we had an avionics issue that led to our plane going down into the field next to the runway, where thankfully our amazing pilot, Scott McHarg was able to gently lay it down. The main wing, and tail structures were all perfectly fine, at the tradeoff that the nose was completely destroyed. So with few options left, we had several people pull an all-nighter, where I rebuilt a new nose from scratch, while others checked the plane and repaired some minor damages.</p>
+<figure class="video">
+<video controls preload="metadata" width="1000"   >
+<source src="/posts/sae_aero/Videos/CP2_Plane_Down_Slowed.mp4" type="video/mp4">
+</video>
+</figure>
+*CP2 flight test 1 crash at 50% speed*
+<hr>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/sae_aero/Videos/CP2_Nose_Build.mp4" type="video/mp4">
+</video>
+</figure>
+*Six-hour rebuild. Night before the trailer left for Florida (1,000X speed)*
+<hr>
+
+  </details>
+<details>
+    <summary><strong>Competition: Lakeland, Florida (March 6–8, 2026)</strong></summary>
+    <p>The ruleset this year rewards points for every 2L bottle we can pack in our plane, where if the bottle weighs 1 lb it scores 4 points, and if it weighs 4 lbs, it scores 15 points. So from a pure points per pound, &ldquo;empty&rdquo; 1 lb bottles are preferred, with the caveat that it requires a LOT of internal volume to store. To address this, ASC picked a really thick airfoil so that we could put bottles into the wing, with a long chord length to generate enough lift. The downside to the thicker airfoil is that it also produces a lot of drag. So much so that in order to fly at our designed MTOW, we <em>require</em> about 5-10 knots of headwind, otherwise the battery (2200 mAh) simply isn&rsquo;t big enough to support a full flight.</p>
+<p>With that foreshadowing out of the way, we ended up having a pretty rough time at competition, where the wind just wasn&rsquo;t there. With the new nose I built, and the repairs from the other members, we wanted to redo our maiden flight of CP2 on the first day, which primarily was for technical inspection and team registration. We had yet another previously unforeseen avionics issue where the arming plug melted through partly due to the warmer floridian climate.</p>
+<p>After ANOTHER all-nighter in the living room of our team&rsquo;s AirBNB to fix the plane, we showed up to the first day of actual competition. Thankfully, we had a pretty productive day, and with 5 flight attempts, we got two valid scoring flights which boosted us into the top 5.</p>
+<p>The 2nd day of competition, March 8th, though, was less productive, to say the least. We as a team agreed that we wanted to fly conservatively in order to try to get in the top 3, so we loaded up CP2, waited on the flight line for other teams to go, then at 10:35 AM CP2 flew for the last time. We took off, and made it about 250 ft down the runway thanks to ground effect giving us more lift, but as soon as we tried to gain more altitude for the turn, the wind died and we crashed.</p>
+<p>With not a moment to lose we carried the wreckage back to our tent, loaded up CP1, and got back in line as soon as possible to make one final attempt. The flight line was set to close at 12:00 PM, and we were able to get CP1 on the runway at 11:56 AM with the exact same payload configuration, just hoping for better wind conditions. We got in the air, and were actually able to limp the plane all the way down the runway, and all the way back thanks to ground effect &amp; a slight breeze. But on the final turn towards the landing zone, the wind died, and we, for the final time, crash landed.</p>
+<p>We finished <strong>6th in flight score</strong> and <strong>5th overall</strong> with design report and technical interview scores factored in.</p>
+ <figure class="video">
+ <video controls preload="metadata" width="800"   >
+ <source src="/posts/sae_aero/Videos/CP1_Comp_Full_Flight_720p.mp4" type="video/mp4">
+ </video>
+ </figure>
+*Full scoring flight of CP1 on Saturday (first day)*
+<hr>
+<figure class="video">
+<video controls preload="metadata" width="800"   >
+<source src="/posts/sae_aero/Videos/CP2_Comp_Crash.mp4" type="video/mp4">
+</video>
+</figure>
+*Final flight of Competition Plane 2*
+<hr>
+
+  </details>
+<details>
+    <summary><strong>Reflection &amp; a Personal Aside</strong></summary>
+    <p>I think I can speak for our entire team when I say that we were a bit disappointed with our performance in Florida. I personally chalk it up to bad luck with the weather.</p>
+<p>That being said, I am <strong>proud</strong> of the work that we all put in, and I&rsquo;m grateful I&rsquo;ve been able to meet so many other engineers.</p>
+<p>I&rsquo;ve learned so much about what goes into designing a plane, thanks to directly witnessing the full design process from conception to 3d models to full structures. Getting to take ownership of the nose was especially rewarding for me, since it&rsquo;s such a critical part of the plane, and I brought it to life, from a sketch on my iPad, to a model in Solidworks/Ansys, to putting the sticks together and seeing it fly our plane.</p>
+<p>To that end, we had <strong>ZERO</strong> structural failures throughout the year. We broke a lot of plane components, but only when our plane suffered other issues. One of the core design philosophies within the SMS subteam of TAMU SAE Aero is that our components <em>should</em> fail in a crash landing. If our plane survives a crash, it&rsquo;s a sign of an overbuilt plane, where we can potentially cut several ounces of structure in order to squeeze out a few more points.</p>
+
+  </details>
+<hr>
+<h3 id="whats-next">What&rsquo;s Next</h3>
+<p>Throughout the year, something I noticed with our design workflow, is that the FEA of our components (except for the main wing) were relatively inconsistent. I spent a LONG time trying to simulate my nose, and how it would react to loads that arise from landing and takeoff. I took my best guess at a reasonable acceleration value from looking at several videos, but it was something that bugged me for most of the year. To go further, I was interested in seeing how accurate our FEA modeling techniques are by measuring structural performance against predicted performance in-flight.</p>
+<p>That&rsquo;s the motivation behind my current project, <strong>SAVIOR</strong>, a custom 4-layer mixed-signal avionics PCB designed to log the aircraft state with a 6-DoF IMU, GPS, and a 16-channel strain gauge array. The goal is to capture real in-flight structural and aerodynamic data and validate the FEA and CFD models against what the airframe is actually experiencing.</p>
+<p>Once I get a little further into the project, I&rsquo;ll have a page for this project.</p>
+<hr>
+<h1 id="hahahugoshortcode16s8hbhb"><a href="/">Back to Home Page</a>
+</h1>
+
+        
+      </section>
+
+      
+
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 Will&#39;s Portfolio</p>
+  
+
+  
+  <p class="text-sm">
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with 
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Howdy!</p>
+<p>I am William Rohren, I am a senior Mechanical Engineering Major at Texas A&amp;M University.</p>
+<p>This site serves as a portfolio to display my various projects, as well as a blog so that I can have a log of the things I do.</p>
+<p><img src="IMG_4208.jpg" alt="pic of me"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">One More Note</div>
+
+        <div class="prose dark:prose-invert">
+          <p>I try to do my best to keep this reasonably updated, but my priorities are in the projects themselves.
+Documentation unfortunately tends to be a retroactive effort.</p>
+<details>
+    <summary>Changelog</summary>
+    <p>5/11/26 - Content &amp; structure overhaul</p>
+<!-- - Rewrote every existing page for consistent tone and detail
+- Cleaned up front matter, categories, tags, and weights across all pages
+- Added First Post and Misc. Projects stub
+- Reordered portfolio: engineering work first, personal pages last
+- Updated all project statuses to May 2026 -->
+<p>9/4/25 - Major content update</p>
+<!-- - Fixed categories & tags on all posts
+- Put all images into folders to clean up file structure
+- Added weights to customize order of posts
+- Replaced old resume with the new one
+- Added PBA/SAE Aero/StarTrackerV2
+- Added framework for adding smaller projects from Middle/High school -->
+<p>4/21/25 - Minor tweaks</p>
+<!-- - Added updated resume
+- Fixed dates on all posts -->
+<p>3/8/25 - Initial portfolio created</p>
+<!-- - A4988 Project
+- Arduino Alarm Clock
+- Atmega32U4 devboard
+- Battery Charger
+- LF3DP
+- PC
+- Photography
+- Plasma cutter (RPS) -->
+
+  </details>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Contact Information</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Email: <a href="mailto:wmrohren@gmail.com" target="_blank">wmrohren@gmail.com</a>
+</p>
+<p>Resume: <a href="./Resume_5-13-26.pdf">here</a>
+ (last updated 5/13/26)</p>
+<p><a href="https://sites.google.com/view/willrohren/home" target="_blank">Google Sites Portfolio</a>
+
+<strong>Warning:</strong> There&rsquo;s a reason I abandoned the old portfolio &amp; remade it with Hugo.</p>
+<details>
+    <summary>Additional Reading</summary>
+    <p>It&rsquo;s because google sites kinda sucks in terms of how customizable it is. As you&rsquo;ll see if you visit my old portfolio, there&rsquo;s a navigation bar at the top, some with drop downs. But as far as the actual content goes, it&rsquo;s <em>really</em> space inefficient. Under &lsquo;Personal Projects &gt; Big Projects&rsquo;, to even see the <strong>SECOND</strong> item requires scrolling past <em>all</em> of the content in the first item.</p>
+<p>I didn&rsquo;t like it. So I thought of trying Hugo, and was given the idea by seeing other people using it (namely various Starforge members <a href="bwees.io">Brandon</a>
+ and <a href="https://ismailhozain.com/" target="_blank">Ismael</a>
+ to name two examples). I found a theme I liked, with blog-like posts and decided that was a suitable way to display my content.</p>
+<p>One last note about formatting, once I have a lot more projects under my belt, I&rsquo;d like to switch to a grid-like format, similar to one used by <a href="https://mitxela.com/projects" target="_blank">mitxela</a>
+</p>
+<p>Anyhow, the google sites portfolio linked above has a lot of my smaller projects on it. From 3D prints to school engineering club events, to VEX Robotics.</p>
+<p>I expect that I will make posts dedicated to grouping these together. This is relatively low priority right now though, since the projects I have been able to do in college have been much more impactful than the projects I did in middle or high school. This is mostly related to money, as working on the RPS is allowing me to spend my own money on projects.</p>
+
+  </details>
+<p>Feel free to email with any questions :)</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 Will&#39;s Portfolio</p>
+  
+
+  
+  <p class="text-sm">
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with 
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

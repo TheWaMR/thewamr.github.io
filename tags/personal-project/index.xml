@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal Project on Will&#39;s Portfolio</title>
+    <link>/tags/personal-project/</link>
+    <description>Recent content in Personal Project on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2025 18:49:33 -0600</lastBuildDate>
+    <atom:link href="/tags/personal-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATmega32U4</title>
+      <link>/posts/atmega32u4_test/</link>
+      <pubDate>Tue, 13 Aug 2024 08:52:58 -0600</pubDate>
+      <guid>/posts/atmega32u4_test/</guid>
+      <description>&lt;p&gt;A custom ATmega32U4 dev board designed in Altium, manufactured by JLCPCB. USB-C fought back. ICSP won.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V1.1 Complete!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alarm Clock</title>
+      <link>/posts/alarmclock/</link>
+      <pubDate>Tue, 25 Apr 2023 22:32:34 -0600</pubDate>
+      <guid>/posts/alarmclock/</guid>
+      <description>&lt;p&gt;My iPhone&amp;rsquo;s alarm stopped going off one too many times. So naturally, I tried to build my own. Many lessons learned later, I have the tools to soon make my return to this project.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt;  V3 tentatively planned for Summer &amp;lsquo;26&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A4988 Stepper Motor Controller</title>
+      <link>/posts/a4988/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/posts/a4988/</guid>
+      <description>&lt;p&gt;A custom four-channel A4988 stepper driver board, designed mostly so I could batch-order another PCB that month. Adafruit sells the same chip on a breakout for $5. That&amp;rsquo;s the lesson.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Built, never got a stepper to move with it. Retired in favor of off-the-shelf driver modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Li-ion Battery Charger</title>
+      <link>/posts/battery_charger/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/posts/battery_charger/</guid>
+      <description>&lt;p&gt;A custom single-cell Li-ion charger / boost / protection PCB. Worked for charging. Worked for boosting. The protection circuit got the MOSFET backwards.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved January 2025. Replaced by off-the-shelf modules for the projects I would&amp;rsquo;ve used it on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ITX Computer Build</title>
+      <link>/posts/pc/</link>
+      <pubDate>Tue, 14 May 2024 03:12:56 -0600</pubDate>
+      <guid>/posts/pc/</guid>
+      <description>&lt;p&gt;My old prebuilt desktop spent its last six months refusing to POST. When it finally gave up for good, I built its replacement from scratch. ITX form factor, no RGB, designed to fit on a shelf above a small apartment desk.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Complete. Built May 2024. Roughly $2,930 all-in for the initial build.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

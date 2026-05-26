@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shop on Will&#39;s Portfolio</title>
+    <link>/categories/shop/</link>
+    <description>Recent content in Shop on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2025 02:58:46 -0600</lastBuildDate>
+    <atom:link href="/categories/shop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plasma Cutter</title>
+      <link>/posts/plasma/</link>
+      <pubDate>Wed, 18 Dec 2024 11:24:33 -0600</pubDate>
+      <guid>/posts/plasma/</guid>
+      <description>&lt;p&gt;A Torchmate CNC plasma cutter sat unused for five years before landing in our shop. Then it became my problem to solve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Fully operational and optimized. SOP published, four staff trained.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LF3DP</title>
+      <link>/posts/lf3dp/</link>
+      <pubDate>Thu, 24 Oct 2024 02:58:46 -0600</pubDate>
+      <guid>/posts/lf3dp/</guid>
+      <description>&lt;p&gt;A large format pellet-extrusion 3D printer built at the RPS, based on Dr. D. Flo&amp;rsquo;s open-source LF3DP design. I owned the gantry build through early 2025, then handed it off.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Partial assembly. X-axis carriage built, waiting on machinist to trim the C-channel extrusion and install electronics. Will not finish before I graduate.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

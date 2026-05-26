@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aluminum Extrusion on Will&#39;s Portfolio</title>
+    <link>/tags/aluminum-extrusion/</link>
+    <description>Recent content in Aluminum Extrusion on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 09:07:46 -0500</lastBuildDate>
+    <atom:link href="/tags/aluminum-extrusion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PBA (Custom BJT 3D Printer)</title>
+      <link>/posts/pba/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/posts/pba/</guid>
+      <description>&lt;p&gt;A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LF3DP</title>
+      <link>/posts/lf3dp/</link>
+      <pubDate>Thu, 24 Oct 2024 02:58:46 -0600</pubDate>
+      <guid>/posts/lf3dp/</guid>
+      <description>&lt;p&gt;A large format pellet-extrusion 3D printer built at the RPS, based on Dr. D. Flo&amp;rsquo;s open-source LF3DP design. I owned the gantry build through early 2025, then handed it off.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Partial assembly. X-axis carriage built, waiting on machinist to trim the C-channel extrusion and install electronics. Will not finish before I graduate.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

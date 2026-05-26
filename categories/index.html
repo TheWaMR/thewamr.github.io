@@ -13,7 +13,7 @@ All Categories | Will&#39;s Portfolio</title>
 
     
 
-<link rel="canonical" href="https://example.org/categories/" />
+<link rel="canonical" href="/categories/" />
 
 
 
@@ -25,7 +25,7 @@ All Categories | Will&#39;s Portfolio</title>
 <meta name="generator" content="Hugo 0.145.0">
 
 
-<meta property="og:url" content="https://example.org/categories/">
+<meta property="og:url" content="/categories/">
   <meta property="og:site_name" content="Will&#39;s Portfolio">
   <meta property="og:title" content="Categories">
   <meta property="og:locale" content="en_us">
@@ -235,19 +235,35 @@ All Categories | Will&#39;s Portfolio</title>
 
   <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
     <h1 class="text-2xl">All Categories</h1>
-    <p class="text-sm">3 categories</p>
+    <p class="text-sm">7 categories</p>
     <div class="flex flex-wrap gap-4 mt-6">
       
-      <a href="/categories/category1/" class="badge h-6 no-underline hover:badge-primary">
-        Category1
+      <a href="/categories/aerospace/" class="badge h-6 no-underline hover:badge-primary">
+        Aerospace
       </a>
       
-      <a href="/categories/electronicss/" class="badge h-6 no-underline hover:badge-primary">
-        Electronicss
+      <a href="/categories/electronics/" class="badge h-6 no-underline hover:badge-primary">
+        Electronics
       </a>
       
-      <a href="/categories/rps/" class="badge h-6 no-underline hover:badge-primary">
-        RPS
+      <a href="/categories/mechanical/" class="badge h-6 no-underline hover:badge-primary">
+        Mechanical
+      </a>
+      
+      <a href="/categories/personal/" class="badge h-6 no-underline hover:badge-primary">
+        Personal
+      </a>
+      
+      <a href="/categories/photography/" class="badge h-6 no-underline hover:badge-primary">
+        Photography
+      </a>
+      
+      <a href="/categories/shop/" class="badge h-6 no-underline hover:badge-primary">
+        Shop
+      </a>
+      
+      <a href="/categories/tech/" class="badge h-6 no-underline hover:badge-primary">
+        Tech
       </a>
       
     </div>
@@ -266,13 +282,19 @@ All Categories | Will&#39;s Portfolio</title>
   
   <figure>
     
-    <img src="/My_Face.jpg" alt="First post" />
+    
+      
+      <picture>
+        <source srcset="/posts/first_post/IMG_4742_hu_8becc9def0476443.webp" type="image/webp" />
+        <img src="/posts/first_post/IMG_4742.JPG" alt="IMG_4742.JPG" />
+      </picture>
+    
     
   </figure>
   
 
   <div class="card-body">
-    <h2 class="card-title">First post</h2>
+    <h2 class="card-title">First Post</h2>
 
     <p class="date text-base-content/60">
     
@@ -280,8 +302,112 @@ All Categories | Will&#39;s Portfolio</title>
     
     </p>
 
-    <p>Howdy! There&rsquo;s nothing too interesting on this page, feel free to look around!</p>
-<p><span style="color: maroon;">Color</span> <span style="color: white;">Test!</span></p>
+    <!--
+How to use hugo:
+open VSCode & type cd WillR_Portfolio to pput the terminal
+in that folder. you may need to do cd C:\ then cd Hugo/WillR_Portfolio
+
+Then, make edits to the markdown files in the content folder
+then use hugo server -D to post the server with the draft pages included
+
+Ctrl + C to stop the server, Ctrl + S to reload (if any changes were made)
+
+STILL NEED TO FIGURE OUT:
+use "hugo new posts/[folder]/index.md" to add a new page in a new folder
+i.e. hugo new posts/RPS/index.md
+
+**BEFORE I ADD ANY OF THESE:
+I SHOULD GO INTO CONFIG.TOML AND ADD DEFAULT AUTHOR / AVATAR / other things
+https://hugo-theme-dream.g1en.site/params-configurations#:~:text=author%20%3D%20%22g1eny0ung,%E4%B8%8D%E5%A6%82%E9%A9%AC%E4%B8%8A%E5%87%BA%E5%8F%91%E3%80%82%22
+
+
+C:\Hugo\WillR_Portfolio\themes\hugo-theme-dream-master\config.toml
+that's to edit params and stuff
+
+hugo new posts/Alarmclock/index.md
+hugo new posts/PC/index.md
+hugo new posts/Battery_Charger/index.md
+hugo new posts/Plasma_Cutter/index.md
+hugo new posts/LF3DP/index.md
+hugo new posts/Photography/index.md
+hugo new posts/A4988/index.md
+
+
+then put images in the folder (this is called a branch)
+
+Use # to create a heading (regular markdown stuff), this will separate 
+the preview section of the page from everything else
+
+https://g1en.site/categories/
+https://github.com/g1eny0ung/blog/blob/master/data/socials.toml
+https://hugo-theme-dream.g1en.site/summary-images
+https://www.markdownguide.org/cheat-sheet/
+
+https://azleslie.com/projects/hugo-tutorial/
+
+add lots more content
+
+HOW TO DEPLOY STUFF TO THE SITE (updating)
+
+make changes (to the files in Documents > Hugofiles > WillR-Portfolio > content)
+
+save all
+
+make a backup somewhere 
+
+open CMD as cd ..administrator 
+
+cd into C:/Users/wmroh/Documents/Hugofiles/WillR-Portfolio 
+use 'cd ..' to go back one level if needed
+
+do
+deploy.sh "[insert commit message]" (just a comment)
+
+OR
+
+do the following commands in order:
+hugo
+cd public 
+git add .
+git commit -m "[insert commit message]"
+git push origin main
+
+make sure 
+# <a href="/">Back to Home Page</a>
+
+is on the top and bottom of every page for navigation. I wish there was a better way, but this will do (until im not burnt out of github anymore)
+
+
+Also, about images. for some reason, some images are processed as "[name].JPG" instead of "[name].jpg". This capitalization screws with everything. IT'S SO STUPID. if you notice broken images, don't bother changing the file extension manually, just go into the markdown file and change the image call to the capital JPG. 
+
+it's dumb but that's how it works.
+
+also also
+putting
+
+[markup.goldmark.renderer]
+unsafe = true
+
+in hugo.toml may solve the issues with putting raw html in there
+(can't remember if it's true or false, idk)
+
+<span style="color: maroon;">Color</span> <span style="color: white;">Test!</span>
+
+Tags:
+- Skills/tools: PCB Design · Altium · KiCAD · SolidWorks · Ansys · Femap · FEA · Topology Optimization · CAD · CNC Machining · Plasma Cutting · 3D Printing · Sheet Metal · Aluminum Extrusion · Soldering · Hand Assembly
+- Topics: Microcontroller · Bare-Metal · ATmega32U4 · ESP32 · Arduino · USB-C · I2C · Stepper Motors · Shift Register · Battery Management · Power Electronics · Mixed-Signal · Binder Jet · Autoclave · CoreXY · Structures · Balsa · Aerodynamics
+- Context: JLCPCB · Texas A&M · SAE Aero · RPS · Lab Project · Personal Project · Documentation
+- Status: Complete · In Progress · Shelved · Handed Off
+
+Categories:
+- Electronics
+- Mechanical
+- Aerospace
+- Shop
+
+-->
+<p>Howdy! I&rsquo;m Will, a mechanical engineering student at Texas A&amp;M. I also spend a lot of my time on electronics and embedded systems, plus anything else where I get to design something from scratch.</p>
+<p>This site is a portfolio and a logbook. Projects are ordered with the most substantial work at the top. Click through any of them for the full story.</p>
 
     
     <div class="card-actions justify-between items-center mt-4">
@@ -308,7 +434,251 @@ All Categories | Will&#39;s Portfolio</title>
 
       <div class="flex items-center">
         <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>2 minute read</span>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/sae_aero/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/sae_aero/Images/LA070758_hu_576f17c28e0a6a03.webp" type="image/webp" />
+        <img src="/posts/sae_aero/Images/LA070758.JPG" alt="Images/LA070758.JPG" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">SAE Aero Design Team</h2>
+
+    <p class="date text-base-content/60">
+    
+      Monday, May 26, 2025
+    
+    </p>
+
+    <p>My experience as an SMS (Structures &amp; Materials Science) engineer on the Texas A&amp;M SAE Aero Design Regular Class Team.</p>
+<p><strong>STATUS:</strong> &lsquo;25–&lsquo;26 Season Complete</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>13 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/pba/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/pba/PBA_V3/Full_Frame_8_10_25_hu_15c1eaa55a50106a.webp" type="image/webp" />
+        <img src="/posts/pba/PBA_V3/Full_Frame_8_10_25.png" alt="PBA_V3/Full_Frame_8_10_25.png" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">PBA (Custom BJT 3D Printer)</h2>
+
+    <p class="date text-base-content/60">
+    
+      Saturday, Jun 14, 2025
+    
+    </p>
+
+    <p>A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.</p>
+<p><strong>STATUS:</strong> Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>8 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/atmega32u4_test/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/atmega32u4_test/Images/32u4_hu_80870c3c48b0c056.webp" type="image/webp" />
+        <img src="/posts/atmega32u4_test/Images/32u4.jpg" alt="Images/32u4.jpg" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">ATmega32U4</h2>
+
+    <p class="date text-base-content/60">
+    
+      Tuesday, Aug 13, 2024
+    
+    </p>
+
+    <p>A custom ATmega32U4 dev board designed in Altium, manufactured by JLCPCB. USB-C fought back. ICSP won.</p>
+<p><strong>STATUS:</strong>  V1.1 Complete!</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>5 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/alarmclock/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/alarmclock/Images/breadboard_hu_c60174c521526ace.webp" type="image/webp" />
+        <img src="/posts/alarmclock/Images/breadboard.jpg" alt="Images/breadboard.jpg" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Alarm Clock</h2>
+
+    <p class="date text-base-content/60">
+    
+      Tuesday, Apr 25, 2023
+    
+    </p>
+
+    <p>My iPhone&rsquo;s alarm stopped going off one too many times. So naturally, I tried to build my own. Many lessons learned later, I have the tools to soon make my return to this project.</p>
+<p><strong>STATUS:</strong>  V3 tentatively planned for Summer &lsquo;26</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>6 minute read</span>
       </div>
     </div>
   </div>
@@ -324,8 +694,8 @@ All Categories | Will&#39;s Portfolio</title>
     
       
       <picture>
-        <source srcset="/posts/a4988/image%2817%29_hu_3783042789fd09a3.webp" type="image/webp" />
-        <img src="/posts/a4988/image%2817%29.png" alt="image(17).png" />
+        <source srcset="/posts/a4988/Images/image%2817%29_hu_3783042789fd09a3.webp" type="image/webp" />
+        <img src="/posts/a4988/Images/image%2817%29.png" alt="Images/image(17).png" />
       </picture>
     
     
@@ -337,12 +707,12 @@ All Categories | Will&#39;s Portfolio</title>
 
     <p class="date text-base-content/60">
     
-      Thursday, Feb 27, 2025
+      Thursday, Oct 10, 2024
     
     </p>
 
-    <p>Goal: Learn about higher-powered digital electronics, and PCB design for integrated boards. This PCB was designed with my Atmega32U4 project in mind.</p>
-<p><strong>STATUS:</strong> I hit a wall :/</p>
+    <p>A custom four-channel A4988 stepper driver board, designed mostly so I could batch-order another PCB that month. Adafruit sells the same chip on a breakout for $5. That&rsquo;s the lesson.</p>
+<p><strong>STATUS:</strong> Built, never got a stepper to move with it. Retired in favor of off-the-shelf driver modules.</p>
 
     
     <div class="card-actions justify-between items-center mt-4">
@@ -369,7 +739,7 @@ All Categories | Will&#39;s Portfolio</title>
 
       <div class="flex items-center">
         <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>3 minute read</span>
+        <span>4 minute read</span>
       </div>
     </div>
   </div>
@@ -378,15 +748,15 @@ All Categories | Will&#39;s Portfolio</title>
       </div>
     
       <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/pc/">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/battery_charger/">
   
   <figure>
     
     
       
       <picture>
-        <source srcset="/posts/pc/PC_GPU_hu_71066bedcbe0b2d7.webp" type="image/webp" />
-        <img src="/posts/pc/PC_GPU.jpg" alt="PC_GPU.jpg" />
+        <source srcset="/posts/battery_charger/Images/V1_PCB_hu_fbaf34caad7a8a1d.webp" type="image/webp" />
+        <img src="/posts/battery_charger/Images/V1_PCB.jpg" alt="Images/V1_PCB.jpg" />
       </picture>
     
     
@@ -394,16 +764,138 @@ All Categories | Will&#39;s Portfolio</title>
   
 
   <div class="card-body">
-    <h2 class="card-title">ITX Computer Build</h2>
+    <h2 class="card-title">Li-ion Battery Charger</h2>
 
     <p class="date text-base-content/60">
     
-      Thursday, Feb 27, 2025
+      Friday, May 26, 2023
     
     </p>
 
-    <p>Custom building my own ITX desktop computer</p>
-<p><strong>STATUS:</strong> Complete!</p>
+    <p>A custom single-cell Li-ion charger / boost / protection PCB. Worked for charging. Worked for boosting. The protection circuit got the MOSFET backwards.</p>
+<p><strong>STATUS:</strong> Shelved January 2025. Replaced by off-the-shelf modules for the projects I would&rsquo;ve used it on.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>7 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/plasma/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/plasma/Images/cover_hu_efb140f980e73313.webp" type="image/webp" />
+        <img src="/posts/plasma/Images/cover.jpg" alt="Images/cover.jpg" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Plasma Cutter</h2>
+
+    <p class="date text-base-content/60">
+    
+      Wednesday, Dec 18, 2024
+    
+    </p>
+
+    <p>A Torchmate CNC plasma cutter sat unused for five years before landing in our shop. Then it became my problem to solve.</p>
+<p><strong>STATUS:</strong> Fully operational and optimized. SOP published, four staff trained.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Will Rohren</span>
+    
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>6 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/lf3dp/">
+  
+  <figure>
+    
+    
+      
+      <picture>
+        <source srcset="/posts/lf3dp/Images/Y_axes_hu_b5a8072e29bd203e.webp" type="image/webp" />
+        <img src="/posts/lf3dp/Images/Y_axes.jpg" alt="Images/Y_axes.jpg" />
+      </picture>
+    
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">LF3DP</h2>
+
+    <p class="date text-base-content/60">
+    
+      Thursday, Oct 24, 2024
+    
+    </p>
+
+    <p>A large format pellet-extrusion 3D printer built at the RPS, based on Dr. D. Flo&rsquo;s open-source LF3DP design. I owned the gantry build through early 2025, then handed it off.</p>
+<p><strong>STATUS:</strong> Partial assembly. X-axis carriage built, waiting on machinist to trim the C-channel extrusion and install electronics. Will not finish before I graduate.</p>
 
     
     <div class="card-actions justify-between items-center mt-4">
@@ -446,8 +938,8 @@ All Categories | Will&#39;s Portfolio</title>
     
       
       <picture>
-        <source srcset="/posts/photography/eclipsecomp_hu_3a5a311de93c9527.webp" type="image/webp" />
-        <img src="/posts/photography/eclipsecomp.JPG" alt="eclipsecomp.JPG" />
+        <source srcset="/posts/photography/Images/eclipsecomp_hu_3a5a311de93c9527.webp" type="image/webp" />
+        <img src="/posts/photography/Images/eclipsecomp.jpg" alt="Images/eclipsecomp.jpg" />
       </picture>
     
     
@@ -459,322 +951,11 @@ All Categories | Will&#39;s Portfolio</title>
 
     <p class="date text-base-content/60">
     
-      Thursday, Feb 27, 2025
+      Friday, Feb 28, 2020
     
     </p>
 
-    <p>Gallery of some cool/interesting photos I have taken</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Will Rohren</span>
-    
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>5 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/lf3dp/">
-  
-  <figure>
-    
-    
-      
-      <picture>
-        <source srcset="/posts/lf3dp/Y_axes_hu_b5a8072e29bd203e.webp" type="image/webp" />
-        <img src="/posts/lf3dp/Y_axes.jpg" alt="Y_axes.jpg" />
-      </picture>
-    
-    
-  </figure>
-  
-
-  <div class="card-body">
-    <h2 class="card-title">LF3DP</h2>
-
-    <p class="date text-base-content/60">
-    
-      Thursday, Feb 27, 2025
-    
-    </p>
-
-    <p>Adapting Dr. D Flo&rsquo;s Large Format 3D Printer (LF3DP) build for the RPS</p>
-<p><strong>STATUS:</strong> Work in Progress</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Will Rohren</span>
-    
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>5 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/battery_charger/">
-  
-  <figure>
-    
-    
-      
-      <picture>
-        <source srcset="/posts/battery_charger/V1_PCB_hu_fbaf34caad7a8a1d.webp" type="image/webp" />
-        <img src="/posts/battery_charger/V1_PCB.jpg" alt="V1_PCB.jpg" />
-      </picture>
-    
-    
-  </figure>
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Li-ion Battery Charger</h2>
-
-    <p class="date text-base-content/60">
-    
-      Thursday, Feb 27, 2025
-    
-    </p>
-
-    <p>Goal: Build my own 18650 Lithium-ion interface for later projects. Functionalities should include battery regulation, standard safety features, and a boost converter able to provide 5/12V. Learn about simple battery management systems.</p>
-<p><strong>STATUS:</strong> Back-Burner</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Will Rohren</span>
-    
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>6 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/alarmclock/">
-  
-  <figure>
-    
-    
-      
-      <picture>
-        <source srcset="/posts/alarmclock/breadboard_hu_c60174c521526ace.webp" type="image/webp" />
-        <img src="/posts/alarmclock/breadboard.jpg" alt="breadboard.jpg" />
-      </picture>
-    
-    
-  </figure>
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Alarm_clock</h2>
-
-    <p class="date text-base-content/60">
-    
-      Wednesday, Feb 26, 2025
-    
-    </p>
-
-    <p>Goal: to learn about microcontroller integration &amp; usage in electronics projects.</p>
-<p>To use an Arduino nano / ESP32 with a RTC module to create a functional alarm clock.</p>
-<p><strong>Status:</strong> Abandoned :(</p>
-<p>(I plan on coming back to this later)</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Will Rohren</span>
-    
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>6 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/plasma/">
-  
-  <figure>
-    
-    
-      
-      <picture>
-        <source srcset="/posts/plasma/cover_hu_efb140f980e73313.webp" type="image/webp" />
-        <img src="/posts/plasma/cover.jpg" alt="cover.jpg" />
-      </picture>
-    
-    
-  </figure>
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Plasma Cutter</h2>
-
-    <p class="date text-base-content/60">
-    
-      Tuesday, Feb 25, 2025
-    
-    </p>
-
-    <p>Resurrecting an abandoned Torchmate CNC Plasma Cutter for TAMU MEEN Dept.</p>
-<p>Goal: Learn about, fix, and document the process of using a CNC plasma cutter for students &amp; staff to use</p>
-<p><strong>STATUS:</strong> Build Complete! Still working on improvements</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <div class="avatar mr-1">
-    <div class="w-8 rounded-full">
-      <img class="my-0" src="/face_zoomed.png" alt="Will Rohren" />
-    </div>
-  </div>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    
-      <span itemprop="name">Will Rohren</span>
-    
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>4 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-      </div>
-    
-      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/atmega32u4_test/">
-  
-  <figure>
-    
-    
-      
-      <picture>
-        <source srcset="/posts/atmega32u4_test/32u4_hu_80870c3c48b0c056.webp" type="image/webp" />
-        <img src="/posts/atmega32u4_test/32u4.jpg" alt="32u4.jpg" />
-      </picture>
-    
-    
-  </figure>
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Atmega32U4</h2>
-
-    <p class="date text-base-content/60">
-    
-      Friday, Feb 21, 2025
-    
-    </p>
-
-    <p>Goal:
-To create my own microcontroller devboard based on the Atmega32U4</p>
-<p>To learn about embedded systems, designing PCB for digital circuitry,
-and programming/debugging the board.</p>
-<p><strong>STATUS:</strong>  Work In Progress</p>
+    <p>A gallery for the stuff that doesn&rsquo;t earn its own project page: eclipses, fish, and the occasional sky shot.</p>
 
     
     <div class="card-actions justify-between items-center mt-4">
@@ -812,6 +993,22 @@ and programming/debugging the board.</p>
     </div>
     
 
+    
+    <div class="flex justify-center pt-8">
+      <div class="join grid grid-cols-2">
+  
+  <button class="join-item btn btn-outline btn-sm" disabled>
+    Previous page
+  </button>
+  
+  
+  <a href="/categories/page/2/" title="Next page" class="join-item btn btn-outline btn-sm">
+    Next page
+  </a>
+  
+</div>
+
+    </div>
     
   </div>
 </div>
@@ -823,7 +1020,7 @@ and programming/debugging the board.</p>
 
   <div>
   
-  <p>© 2025 Will&#39;s Portfolio</p>
+  <p>© 2026 Will&#39;s Portfolio</p>
   
 
   
@@ -879,58 +1076,92 @@ and programming/debugging the board.</p>
       class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
     >
       <div class="card-body">
+        <div class="card-title">Me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Howdy!</p>
+<p>I am William Rohren, I am a senior Mechanical Engineering Major at Texas A&amp;M University.</p>
+<p>This site serves as a portfolio to display my various projects, as well as a blog so that I can have a log of the things I do.</p>
+<p><img src="IMG_4208.jpg" alt="pic of me"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">One More Note</div>
+
+        <div class="prose dark:prose-invert">
+          <p>I try to do my best to keep this reasonably updated, but my priorities are in the projects themselves.
+Documentation unfortunately tends to be a retroactive effort.</p>
+<details>
+    <summary>Changelog</summary>
+    <p>5/11/26 - Content &amp; structure overhaul</p>
+<!-- - Rewrote every existing page for consistent tone and detail
+- Cleaned up front matter, categories, tags, and weights across all pages
+- Added First Post and Misc. Projects stub
+- Reordered portfolio: engineering work first, personal pages last
+- Updated all project statuses to May 2026 -->
+<p>9/4/25 - Major content update</p>
+<!-- - Fixed categories & tags on all posts
+- Put all images into folders to clean up file structure
+- Added weights to customize order of posts
+- Replaced old resume with the new one
+- Added PBA/SAE Aero/StarTrackerV2
+- Added framework for adding smaller projects from Middle/High school -->
+<p>4/21/25 - Minor tweaks</p>
+<!-- - Added updated resume
+- Fixed dates on all posts -->
+<p>3/8/25 - Initial portfolio created</p>
+<!-- - A4988 Project
+- Arduino Alarm Clock
+- Atmega32U4 devboard
+- Battery Charger
+- LF3DP
+- PC
+- Photography
+- Plasma cutter (RPS) -->
+
+  </details>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
         <div class="card-title">Contact Information</div>
 
         <div class="prose dark:prose-invert">
           <p>Email: <a href="mailto:wmrohren@gmail.com" target="_blank">wmrohren@gmail.com</a>
 </p>
-<p>Resume: <a href="./Resume_1-22-25.pdf">here</a>
- (last updated 1/22/25)</p>
+<p>Resume: <a href="./Resume_5-13-26.pdf">here</a>
+ (last updated 5/13/26)</p>
+<p><a href="https://sites.google.com/view/willrohren/home" target="_blank">Google Sites Portfolio</a>
+
+<strong>Warning:</strong> There&rsquo;s a reason I abandoned the old portfolio &amp; remade it with Hugo.</p>
+<details>
+    <summary>Additional Reading</summary>
+    <p>It&rsquo;s because google sites kinda sucks in terms of how customizable it is. As you&rsquo;ll see if you visit my old portfolio, there&rsquo;s a navigation bar at the top, some with drop downs. But as far as the actual content goes, it&rsquo;s <em>really</em> space inefficient. Under &lsquo;Personal Projects &gt; Big Projects&rsquo;, to even see the <strong>SECOND</strong> item requires scrolling past <em>all</em> of the content in the first item.</p>
+<p>I didn&rsquo;t like it. So I thought of trying Hugo, and was given the idea by seeing other people using it (namely various Starforge members <a href="bwees.io">Brandon</a>
+ and <a href="https://ismailhozain.com/" target="_blank">Ismael</a>
+ to name two examples). I found a theme I liked, with blog-like posts and decided that was a suitable way to display my content.</p>
+<p>One last note about formatting, once I have a lot more projects under my belt, I&rsquo;d like to switch to a grid-like format, similar to one used by <a href="https://mitxela.com/projects" target="_blank">mitxela</a>
+</p>
+<p>Anyhow, the google sites portfolio linked above has a lot of my smaller projects on it. From 3D prints to school engineering club events, to VEX Robotics.</p>
+<p>I expect that I will make posts dedicated to grouping these together. This is relatively low priority right now though, since the projects I have been able to do in college have been much more impactful than the projects I did in middle or high school. This is mostly related to money, as working on the RPS is allowing me to spend my own money on projects.</p>
+
+  </details>
 <p>Feel free to email with any questions :)</p>
-
-        </div>
-      </div>
-    </article>
-  </div>
-  
-  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
-    <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
-    >
-      <div class="card-body">
-        <div class="card-title">Current Projects</div>
-
-        <div class="prose dark:prose-invert">
-          <p>Priority:</p>
-<ul>
-<li>Personal: AtMega32U4</li>
-<li>RPS: Plasma Cutter</li>
-</ul>
-<p>When I feel like it:</p>
-<ul>
-<li>Personal: A4988, Battery Charger</li>
-<li>RPS: LF3DP</li>
-</ul>
-
-        </div>
-      </div>
-    </article>
-  </div>
-  
-  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
-    <article
-      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
-    >
-      <div class="card-body">
-        <div class="card-title">Me</div>
-
-        <div class="prose dark:prose-invert">
-          <p>Howdy!</p>
-<p>I am William Rohren, and I am a junior Mechanical Engineering Major at Texas A&amp;M University.
-This site serves as a portfolio to display my various projects, as well as a blog so that I
-can have a log of the things I do.</p>
-<p>I currently am a student worker for the Rapid Prototyping Studio within the MEEN department of A&amp;M. Any posts/projects tagged with &lsquo;RPS&rsquo; represent things I have done while working at the RPS.</p>
-<p>I&rsquo;ve done markdown with the RPS, but setting that up is entirely new to me.</p>
 
         </div>
       </div>
@@ -951,7 +1182,7 @@ can have a log of the things I do.</p>
 
   <div>
   
-  <p>© 2025 Will&#39;s Portfolio</p>
+  <p>© 2026 Will&#39;s Portfolio</p>
   
 
   
@@ -1036,8 +1267,5 @@ can have a log of the things I do.</p>
 
     <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
-  <a href="https://example.org/" style="position:fixed; bottom:20px; left:20px; background:#333; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none;">
-      Home
-  </a> 
   </body>
 </html>

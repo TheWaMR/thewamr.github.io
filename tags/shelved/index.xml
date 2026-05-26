@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shelved on Will&#39;s Portfolio</title>
+    <link>/tags/shelved/</link>
+    <description>Recent content in Shelved on Will&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 09:07:46 -0500</lastBuildDate>
+    <atom:link href="/tags/shelved/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PBA (Custom BJT 3D Printer)</title>
+      <link>/posts/pba/</link>
+      <pubDate>Sat, 14 Jun 2025 09:07:46 -0500</pubDate>
+      <guid>/posts/pba/</guid>
+      <description>&lt;p&gt;A PhD student handed me four steel brackets epoxied together and asked me to make a plate go up and down. The actual goal: a binder-jet 3D printer that survives an autoclave.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved August 2025. Between a ridiculous amount of feature creep, and SAE Aero kicking off, I ran out of time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A4988 Stepper Motor Controller</title>
+      <link>/posts/a4988/</link>
+      <pubDate>Thu, 10 Oct 2024 18:49:33 -0600</pubDate>
+      <guid>/posts/a4988/</guid>
+      <description>&lt;p&gt;A custom four-channel A4988 stepper driver board, designed mostly so I could batch-order another PCB that month. Adafruit sells the same chip on a breakout for $5. That&amp;rsquo;s the lesson.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Built, never got a stepper to move with it. Retired in favor of off-the-shelf driver modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Li-ion Battery Charger</title>
+      <link>/posts/battery_charger/</link>
+      <pubDate>Fri, 26 May 2023 02:51:52 -0600</pubDate>
+      <guid>/posts/battery_charger/</guid>
+      <description>&lt;p&gt;A custom single-cell Li-ion charger / boost / protection PCB. Worked for charging. Worked for boosting. The protection circuit got the MOSFET backwards.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;STATUS:&lt;/strong&gt; Shelved January 2025. Replaced by off-the-shelf modules for the projects I would&amp;rsquo;ve used it on.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
