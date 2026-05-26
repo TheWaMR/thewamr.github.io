@@ -389,7 +389,7 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
     <p>I batched the V1 board with another order I was sending to JLCPCB at the time (a <a href="/posts/alarmclock/">V2 alarm clock</a>
  board) to save on shipping, which meant compressing the schematic and layout work into a tight window. In retrospect I rushed it. I should have spent another week on the protection circuit specifically, but at the time the deadline was the deadline.</p>
 <p>The architecture was straightforward: TI&rsquo;s BQ24074 as the charging IC, a TPS3700 over-voltage / under-voltage window monitor watching the battery, an N-channel enhancement MOSFET that the TPS3700 was supposed to switch to disconnect the battery if it ever fell outside the safe window, and a DC-DC boost stage on the output with a feedback divider sized for either 5V or 12V depending on which resistor was populated.</p>
-<p><img src="Images/V1_Early.JPG" alt="V1 early layout">
+<p><img src="Images/V1_Early.jpg" alt="V1 early layout">
 <em>Early V1 layout iteration</em></p>
 <p><img src="Images/V1_Finished.png" alt="V1 final design">
 <em>Final V1 layout sent to JLCPCB. Caffeine molecule on the silkscreen drawn in Notability</em></p>
@@ -427,7 +427,7 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
 <em>V2 layout in 3D. Same general topology, reworked protection section.</em></p>
 <p>The boards arrived, I assembled one, and went through the same V1 test routine: bench supply current-limited to 0.5A, no battery on the input, just looking for a clean power-up. The current limiter pegged immediately. Dead short somewhere on the board.</p>
 <p>The clue: the BQ24074 charging IC was getting <em>really</em> hot, very fast. That points at either a solder bridge under the IC (likely, since QFN packages with hand-applied paste are exactly where bridges hide) or a layout error around its power pins (less likely but possible). I never got far enough to distinguish between the two. The right move would have been to rework the IC and try again, or assemble a second board fresh from a different paste application.</p>
-<p><img src="Images/Images/V2_Image.jpg" alt="V2 3D model">
+<p><img src="Images/V2_Image.jpg" alt="V2 3D model">
 <em>V2 assembled PCB</em></p>
 <p>That&rsquo;s where the project sat when I shelved it.</p>
 
