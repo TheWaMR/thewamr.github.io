@@ -383,28 +383,28 @@ I went with a 4-layer stackup (signal / ground / power / signal) to keep the pow
 <details>
     <summary><strong>V1 Design (September 2024)</strong></summary>
     <p>The first layout had the pin headers arranged in two perpendicular rows. Once I started placing the actual chip footprint and routing traces, it became obvious there was a lot of wasted board real estate. The geometry didn&rsquo;t make sense for the chip&rsquo;s pinout.</p>
-<p><img src="V1_Early.png" alt="V1 early layout">
+<p><img src="Images/V1_Early.png" alt="V1 early layout">
 <em>Early layout iteration. Perpendicular pin headers, too much dead space</em></p>
 <p>I switched to a staggered pin header arrangement, which let me pull the overall board footprint in significantly. I also added a dedicated 2×4 header block: six pins for ICSP (In-Circuit Serial Programming) and two more for TX/RX. The plan was to use ICSP only for burning the initial bootloader, after which the USB-C port would handle everything.</p>
-<p><img src="V1_Design.png" alt="V1 final layout">
+<p><img src="Images/V1_Design.png" alt="V1 final layout">
 <em>Final V1 layout. Ground and power planes hidden. They live on the inner two layers</em></p>
 
   </details>
 <details>
     <summary><strong>V1 First Prototype &amp; The USB-C Problem (November 2024)</strong></summary>
     <p>The boards came back from JLCPCB, I ordered components from DigiKey, and spent about two hours hand-assembling the first prototype. Got the bootloader flashed via ICSP without any issues.</p>
-<p><img src="32u4.jpg" alt="V1 assembled board">
+<p><img src="Images/32u4.jpg" alt="V1 assembled board">
 <em>Assembled V1 Board</em></p>
-<p><img src="workspace.jpg" alt="Workbench during assembly">
+<p><img src="Images/workspace.jpg" alt="Workbench during assembly">
 <em>Workbench at the MEEN Rapid Prototyping Studio</em></p>
 <hr>
 <p>Then I plugged in the USB-C cable and nothing happened. Posted about it in the <a href="https://www.starforgefoundry.com/" target="_blank">Starforge Discord</a>
 , a local makerspace here in College Station, and got the answer within a few minutes: I&rsquo;d left the CC pins floating.</p>
 <p>USB-C uses the CC (Configuration Channel) lines to negotiate the connection before anything else happens. With them floating, the host-side controller never sees a valid handshake, and the port stays silent. The fix is a pair of 5.1kΩ pulldown resistors on CC1 and CC2, a detail I&rsquo;d missed entirely when designing the power delivery section.</p>
 <p>ICSP still worked fine, so the board wasn&rsquo;t dead, just permanently tethered to a bundle of six wires any time I wanted to upload new firmware. Inconvenient, but workable enough to keep going.</p>
-<p><img src="ICSP_prog.jpg" alt="ICSP programming setup">
+<p><img src="Images/ICSP_prog.jpg" alt="ICSP programming setup">
 <em>ICSP wiring setup</em></p>
-<p><img src="V1_Lights.jpg" alt="LEDs blinking on V1">
+<p><img src="Images/V1_Lights.jpg" alt="LEDs blinking on V1">
 <em>Onboard LEDs turn on!</em></p>
 <p>I got some LEDs blinking, verified the GPIO pins were responding correctly, and started noting everything I wanted to change before spinning a second revision.</p>
 
@@ -418,7 +418,7 @@ I went with a 4-layer stackup (signal / ground / power / signal) to keep the pow
 <li><strong>Pin spacing audited</strong> across the whole board to make sure everything would actually land on 0.1&quot; breadboard pitch</li>
 <li><strong>Component placement tightened up</strong> to reduce dead space</li>
 </ul>
-<p><img src="Redesign.png" alt="V1 vs V1.1 comparison">
+<p><img src="Images/Redesign.png" alt="V1 vs V1.1 comparison">
 <em>V1 (left) vs V1.1 (right). Inline headers, CC resistors added, tighter layout overall.</em></p>
 <p>The boards shipped from Hong Kong with some delays, but eventually arrived. Assembly went smoothly.</p>
 <p><img src="Images/V1_1_Assembled.jpg" alt="V1.1 assembled">
