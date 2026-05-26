@@ -363,7 +363,7 @@ STATUS: Partial assembly. X-axis carriage built, waiting on machinist to trim th
 <p>This is a project from my work at the <strong>Rapid Prototyping Studio (RPS)</strong>, not a personal one. The original justification was that the SAE student team wanted the ability to print very large objects: carbon fiber molds for aero shells, demonstration parts, that kind of thing. The funding for those parts evaporated before they were ordered, but the RPS still had end-of-fiscal-year budget that needed to be spent or returned, so my boss bought the frame components anyway. The student-use case was always a bit of a stretch. Minimum viable print volume on a machine this size is around 5 kg of PLA pellets, which is well outside of the realm of what 99.99% of students would utilize for classes/research/clubs.</p>
 <p>The build is based on <strong><a href="https://www.drdflo.com/pages/Projects/LF3DP.html" target="_blank">Dr. D. Flo&rsquo;s LF3DP</a>
 </strong>: his CAD, his design choices, his BOM, with small RPS-specific customizations. None of this would have been feasible to build from scratch in the time we had. He deserves the credit for the design itself.</p>
-<p><img src="drdflo.png" alt="Dr. D. Flo&rsquo;s reference build">
+<p><img src="Images/drdflo.png" alt="Dr. D. Flo&rsquo;s reference build">
 <em>Dr. D. Flo&rsquo;s original LF3DP, the basis for ours.</em></p>
 <hr>
 <h3 id="project-timeline">Project Timeline</h3>
@@ -371,18 +371,18 @@ STATUS: Partial assembly. X-axis carriage built, waiting on machinist to trim th
     <summary><strong>Frame &amp; Wheel Plates (October 2024 – January 2025)</strong></summary>
     <p>The parts sat in their boxes for about three months after arriving. Funding had been pulled from the original use case, so it was a low-priority shop project competing against a dozen other things. Construction finally started in late October.</p>
 <p>The frame is aluminum extrusion forming a rectangular prism, with solid aluminum corner joints machined in-house by Ubaldo, our shop machinist. The basic frame went together over a few short sessions.</p>
-<p><img src="frame.jpg" alt="Building the frame">
+<p><img src="Images/frame.jpg" alt="Building the frame">
 <em>Frame assembly in progress.</em></p>
 <p>The week after fall finals, my coworker Jackson and I stayed in College Station to work full-time for a week and knock out a backlog of shop projects: the plasma cutter, running shop air through the space, and on the LF3DP side, adding casters so the frame could be relocated as the shop layout shifted.</p>
 <p>Adding casters meant designing and manufacturing adapter plates. I prototyped them in PLA on our 3D printers first to verify the geometry, then CNC&rsquo;d the final versions out of 1/2&quot; aluminum plate. The PLA prototypes broke during the swap, which honestly made the case for the metal versions for me.</p>
-<p><img src="broken_plate.jpg" alt="Broken PLA caster plate">
+<p><img src="Images/broken_plate.jpg" alt="Broken PLA caster plate">
 <em>The PLA prototype, demonstrating exactly why we were switching to aluminum.</em></p>
-<p><img src="metal_plates.jpg" alt="Machined aluminum plates">
+<p><img src="Images/metal_plates.jpg" alt="Machined aluminum plates">
 <em>The CNC&rsquo;d aluminum replacements.</em></p>
 <p>The plates were my excuse to learn CNC machining on the <strong>Haas Super Mini Mill</strong> at our off-campus location. Honest take: the design side is genuinely fun (Fusion CAM, toolpath planning, watching the simulation play out) but the actual setup work (workholding, setting program zero, the entire pre-cut routine) takes substantially longer than the cutting itself. New respect for full-time machinists.</p>
-<p><img src="Haas.jpg" alt="Haas Super Mini Mill">
+<p><img src="Images/Haas.jpg" alt="Haas Super Mini Mill">
 <em>The Haas. Better at being patient than I am.</em></p>
-<p><img src="Machining.gif" alt="Machining gif">
+<p><img src="Images/Machining.gif" alt="Machining gif">
 <em>Cutting the aluminum caster plates.</em></p>
 <p>Once the spring semester started I couldn&rsquo;t carve out enough time during normal business hours to keep visiting the off-campus machine shop, so the rest of the machined parts on this project came from Ubaldo.</p>
 
@@ -392,13 +392,13 @@ STATUS: Partial assembly. X-axis carriage built, waiting on machinist to trim th
     <p>After winter break I started on the gantry: Y-axis, X-axis, and the Z-axis side plates that join everything to the frame. By this point the project was officially low priority on my end, since I&rsquo;d also been tasked with bringing the <a href="/posts/plasma/">plasma cutter</a>
  online and that took precedence.</p>
 <p>The custom plates that hold the axes together were one of the genuinely fun parts of this build. Dr. D. Flo embellished his with a custom design, so I followed his lead and modeled ours with the Texas A&amp;M block logo cut into them.</p>
-<p><img src="y_axis_plate.jpg" alt="Y-axis plate with TAMU logo">
+<p><img src="Images/y_axis_plate.jpg" alt="Y-axis plate with TAMU logo">
 <em>Y-axis plate with the A&amp;M block logo. Small detail, but a nice one.</em></p>
 <p>The Z-axis side plates were installed by my coworkers and my boss; my piece was bolting in the machined corner brackets (Ubaldo again) and prepping each Y-axis with motor, lead screw, and end plates.</p>
-<p><img src="Z_plate_bottoms.jpg" alt="Z-axis bottom brackets">
+<p><img src="Images/Z_plate_bottoms.jpg" alt="Z-axis bottom brackets">
 <em>One half of the bracket assembly, repeated four times around the frame.</em></p>
 <p>By early March, the Z-axes and Y-axes were assembled and installed. The X-axis was prepped but not yet on the machine. The next blocking issue was thread-locking everything. We&rsquo;d already started seeing screws back out from vibration, and pushing forward without dealing with that was going to compound the problem.</p>
-<p><img src="Y_axes.jpg" alt="Y-axes installed">
+<p><img src="Images/Y_axes.jpg" alt="Y-axes installed">
 <em>Y-axes mounted with the X-axis ready to install.</em></p>
 <p>This is the point where my involvement effectively ended. The plasma cutter was demanding most of my attention, RPS foot traffic was peaking for mid-semester, and I&rsquo;d lost interest in the project itself.</p>
 
@@ -518,9 +518,11 @@ Documentation unfortunately tends to be a retroactive effort.</p>
     <p>5/11/26 - Content &amp; structure overhaul</p>
 <!-- - Rewrote every existing page for consistent tone and detail
 - Cleaned up front matter, categories, tags, and weights across all pages
-- Added First Post and Misc. Projects stub
-- Reordered portfolio: engineering work first, personal pages last
-- Updated all project statuses to May 2026 -->
+- Fixed First Post and added Misc. Projects stub
+- Fixed page weights (ordering)
+- Updated all project statuses to May 2026
+- Added SAE Aero page and overhauled PBA pages with new content, images, and videos
+- Fixed deploy pipeline with Claude -->
 <p>9/4/25 - Major content update</p>
 <!-- - Fixed categories & tags on all posts
 - Put all images into folders to clean up file structure

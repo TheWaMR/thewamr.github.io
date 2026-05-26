@@ -370,7 +370,7 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
     <summary><strong>Salvaging the Cells (Late 2023)</strong></summary>
     <p>The starting point was an old Dell laptop battery a friend gave me. Disassembling the pack got me 30 lithium-ion 18650 cells in various states of health. The cells were originally welded into series-parallel groups with nickel ribbon, which had to come off before I could use them individually.</p>
 <p>A handful of cells had punctured insulation around the (+) terminal from removing the ribbon, so those got duct-taped before going into storage. The rest came out clean.</p>
-<p><img src="Battery_Storage.jpg" alt="18650 storage">
+<p><img src="Images/Battery_Storage.jpg" alt="18650 storage">
 <em>30 cells in cardboard. The taped ones had nicked insulation around the positive terminal</em></p>
 <p>That left me with 30 cells and no way to charge or use them.</p>
 
@@ -378,7 +378,7 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
 <details>
     <summary><strong>Off-the-Shelf TP4056 Modules (Early – Mid 2024)</strong></summary>
     <p>The first stop was AliExpress. I picked up a batch of TP4056-based charger modules: USB-C input, easy through-hole pads for battery and load connections, and a built-in protection IC handling over-discharge, over-voltage, and short-circuit cutoff. Spec sheet claimed 1A charging and up to 3A continuous discharge, which was plenty for what I wanted.</p>
-<p><img src="TP4056.jpg" alt="TP4056 module">
+<p><img src="Images/TP4056.jpg" alt="TP4056 module">
 <em>Off-the-shelf TP4056 charger module</em></p>
 <p>The boards worked, but they only handled the charging side. To get a steady 5V or 12V out, I had to add a separate DC-DC boost converter board (also off AliExpress, also with its own quirks). The boost board had a trimpot for variable output voltage, which I never needed. In every project I&rsquo;ve ever wanted to power, the answer is 5V or 12V, never something in between.</p>
 <p>The result was two boards floating around with a lot of jumper wires between them. It worked, but it begged to be one board. That&rsquo;s where the project actually started.</p>
@@ -389,20 +389,20 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
     <p>I batched the V1 board with another order I was sending to JLCPCB at the time (a <a href="/posts/alarmclock/">V2 alarm clock</a>
  board) to save on shipping, which meant compressing the schematic and layout work into a tight window. In retrospect I rushed it. I should have spent another week on the protection circuit specifically, but at the time the deadline was the deadline.</p>
 <p>The architecture was straightforward: TI&rsquo;s BQ24074 as the charging IC, a TPS3700 over-voltage / under-voltage window monitor watching the battery, an N-channel enhancement MOSFET that the TPS3700 was supposed to switch to disconnect the battery if it ever fell outside the safe window, and a DC-DC boost stage on the output with a feedback divider sized for either 5V or 12V depending on which resistor was populated.</p>
-<p><img src="V1_Early.JPG" alt="V1 early layout">
+<p><img src="Images/V1_Early.JPG" alt="V1 early layout">
 <em>Early V1 layout iteration</em></p>
-<p><img src="V1_Finished.png" alt="V1 final design">
+<p><img src="Images/V1_Finished.png" alt="V1 final design">
 <em>Final V1 layout sent to JLCPCB. Caffeine molecule on the silkscreen drawn in Notability</em></p>
 <p>The boards came back, I assembled the first prototype, and after confirming there were no obvious shorts I plugged in a single cell. After a little fiddling, 5V on the output. Swapping the feedback resistor and re-testing got me 12V. Charging from a bench supply also worked, although somewhat awkwardly. I&rsquo;d forgotten to break out a separate 5V input pin, so testing the charge path required clipping leads onto the USB pads.</p>
-<p><img src="V1_PCB.jpg" alt="V1 board, populated">
+<p><img src="Images/V1_PCB.jpg" alt="V1 board, populated">
 <em>V1 fully assembled. Quarter for scale</em></p>
-<p><img src="V1_side.jpg" alt="V1 side profile">
+<p><img src="Images/V1_side.jpg" alt="V1 side profile">
 <em>Side view. Visible inductor and electrolytics from the boost stage</em></p>
-<p><img src="charging_board.jpg" alt="Charging setup">
+<p><img src="Images/charging_board.jpg" alt="Charging setup">
 <em>Charging an 18650 from the bench supply</em></p>
-<p><img src="5Volts.jpg" alt="5V output verified">
+<p><img src="Images/5Volts.jpg" alt="5V output verified">
 <em>5V on the output, single cell on the input</em></p>
-<p><img src="12V.jpg" alt="12V discharge test">
+<p><img src="Images/12V.jpg" alt="12V discharge test">
 <em>12V output after the feedback resistor swap</em></p>
 <p>Charging worked. Boosting worked. The protection circuit, however, didn&rsquo;t.</p>
 
@@ -412,9 +412,9 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
     <p>My birthday landed on a Monday with summer-class lectures, which I dealt with by spending the afternoon afterward on the bench debugging the V1 board. The TPS3700 monitor was reading the battery voltage correctly and asserting its output the way it was supposed to, but the MOSFET it was driving wasn&rsquo;t actually disconnecting anything. Pulling the cell down to a deliberately under-voltage state and watching the load current didn&rsquo;t change anything.</p>
 <p>I posted in the <a href="https://www.starforgefoundry.com/" target="_blank">Starforge Foundry Discord</a>
 , the local College Station makerspace, and worked through the circuit with people there. The eventual diagnosis: I&rsquo;d wired the N-channel MOSFET in backwards relative to current flow, which made the body diode the only conducting path and made the gate signal essentially decorative.</p>
-<p><img src="Soldering_Setup.jpg" alt="Soldering bench">
+<p><img src="Images/Soldering_Setup.jpg" alt="Soldering bench">
 <em>Bench setup during the debugging session</em></p>
-<p><img src="analysis.png" alt="Protection circuit analysis">
+<p><img src="Images/analysis.png" alt="Protection circuit analysis">
 <em>Hand-drawn analysis of the protection topology and where it went wrong</em></p>
 <p>The fix was a schematic change, not a bodge. Body-diode-conducting MOSFETs aren&rsquo;t a thing you patch around with a jumper wire. That meant the protection circuit was effectively non-functional on V1, and any &ldquo;fix&rdquo; was going to require a V2 spin.</p>
 
@@ -423,11 +423,11 @@ STATUS: Shelved January 2025. Replaced by off-the-shelf modules for the projects
     <summary><strong>V2 PCB &amp; The Dead Short (Fall 2024 – January 2025)</strong></summary>
     <p>I got busy with summer classes and other electronics work, most relevantly the <a href="/posts/atmega32u4_test">ATmega32U4 dev board</a>
 , which was running in parallel. I didn&rsquo;t get back to this until the fall. By then I had momentum on the dev board and decided to spin a V2 of the charger at the same time, with what I <em>believed</em> was a corrected protection circuit.</p>
-<p><img src="V2_3D.png" alt="V2 3D model">
+<p><img src="Images/V2_3D.png" alt="V2 3D model">
 <em>V2 layout in 3D. Same general topology, reworked protection section.</em></p>
 <p>The boards arrived, I assembled one, and went through the same V1 test routine: bench supply current-limited to 0.5A, no battery on the input, just looking for a clean power-up. The current limiter pegged immediately. Dead short somewhere on the board.</p>
 <p>The clue: the BQ24074 charging IC was getting <em>really</em> hot, very fast. That points at either a solder bridge under the IC (likely, since QFN packages with hand-applied paste are exactly where bridges hide) or a layout error around its power pins (less likely but possible). I never got far enough to distinguish between the two. The right move would have been to rework the IC and try again, or assemble a second board fresh from a different paste application.</p>
-<p><img src="Images/V2_Image.jpg" alt="V2 3D model">
+<p><img src="Images/Images/V2_Image.jpg" alt="V2 3D model">
 <em>V2 assembled PCB</em></p>
 <p>That&rsquo;s where the project sat when I shelved it.</p>
 
@@ -552,9 +552,11 @@ Documentation unfortunately tends to be a retroactive effort.</p>
     <p>5/11/26 - Content &amp; structure overhaul</p>
 <!-- - Rewrote every existing page for consistent tone and detail
 - Cleaned up front matter, categories, tags, and weights across all pages
-- Added First Post and Misc. Projects stub
-- Reordered portfolio: engineering work first, personal pages last
-- Updated all project statuses to May 2026 -->
+- Fixed First Post and added Misc. Projects stub
+- Fixed page weights (ordering)
+- Updated all project statuses to May 2026
+- Added SAE Aero page and overhauled PBA pages with new content, images, and videos
+- Fixed deploy pipeline with Claude -->
 <p>9/4/25 - Major content update</p>
 <!-- - Fixed categories & tags on all posts
 - Put all images into folders to clean up file structure

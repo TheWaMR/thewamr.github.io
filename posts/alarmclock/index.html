@@ -370,12 +370,12 @@ STATUS: V3 tentatively planned for Summer ‘26">
 <details>
     <summary><strong>V1: TinkerCAD &amp; Breadboard (Early 2023)</strong></summary>
     <p>Before buying any hardware, I spent time in <strong>Autodesk TinkerCAD</strong>, an online circuit simulator, to figure out if my concept would even work. The simulation ran at single-digit FPS by the time I had everything wired up, which I chose to interpret as a good sign rather than a warning.</p>
-<p><img src="alarm_tinkerCAD.png" alt="TinkerCAD simulation">
+<p><img src="Images/alarm_tinkerCAD.png" alt="TinkerCAD simulation">
 <em>TinkerCAD simulation. The FPS was not great. The vibes were</em></p>
 <p>With a working simulation in hand, I bought an Arduino Nano, a handful of 74HC595 shift registers, a PCB soundboard, and an Adafruit RTC module, and translated the design onto a breadboard. I added an LCD screen and rotary encoder for navigation. One for displaying the time and alarm settings, the other for scrolling through menus.</p>
-<p><img src="breadboard.jpg" alt="Compact breadboard">
+<p><img src="Images/breadboard.jpg" alt="Compact breadboard">
 <em>Full breadboard prototype</em></p>
-<p><img src="idle_animation2.gif" alt="Idle animation">
+<p><img src="Images/idle_animation2.gif" alt="Idle animation">
 <em>Idle animation on the LCD display</em></p>
 <p>It worked. The time kept, the alarm triggered, the display animated. For a first embedded project built entirely from a simulator and guesswork, that felt like a reasonable outcome.</p>
 
@@ -390,14 +390,14 @@ STATUS: V3 tentatively planned for Summer ‘26">
 <li>A 555 timer for brightness control instead of just using a PWM pin on the Nano
 I never sent this design out for manufacturing, thankfully. I moved on.</li>
 </ul>
-<p><img src="kiCAD_alarm.png" alt="KiCAD design">
+<p><img src="Images/kiCAD_alarm.png" alt="KiCAD design">
 <em>The KiCAD layout. There are many things wrong with this. I was learning</em></p>
 <p>At around the same time, I discovered the <strong>ESP32</strong>: faster than the Nano (16 MHz &raquo; 240 MHz), dual-core, built-in WiFi and Bluetooth. On paper, a strict upgrade. I bought the cheapest ESP32 dev boards I could find on Amazon, which, in hindsight, was foreshadowing.</p>
 <p>The immediate problem: the Nano runs on 5V logic and the ESP32 runs on 3.3V. Every peripheral I&rsquo;d bought was built for the Nano. Connecting them directly to the ESP32 would fry it. The solution I found was Adafruit&rsquo;s BSS138-based bidirectional logic level shifter. I&rsquo;d used their breakout board successfully on the breadboard, so I decided to integrate the same circuit directly into my PCB design rather than using the breakout.</p>
 <p><strong>MAJOR BLUNDER</strong></p>
-<p><img src="ESP32_1.jpg" alt="Early ESP32 test">
+<p><img src="Images/ESP32_1.jpg" alt="Early ESP32 test">
 <em>Using the ESP32 with the original shift register to control some LEDs</em></p>
-<p><img src="ESP32_2.jpg" alt="ESP32 clock running">
+<p><img src="Images/ESP32_2.jpg" alt="ESP32 clock running">
 <em>Full breadboard prototype with ESP32 and all other functionalities</em></p>
 <p>The ESP32 rabbit hole consumed a lot of time: dual-core task management, watchdog timer behavior, relearning everything I&rsquo;d figured out on the Nano but now in a different framework with different voltage requirements. I eventually got back to feature parity with the original breadboard design, but it took far longer than it should have. The ESP32 was total overkill for a clock. I know that now.</p>
 
@@ -406,14 +406,14 @@ I never sent this design out for manufacturing, thankfully. I moved on.</li>
     <summary><strong>V2b: Altium PCB &amp; The I2C Problem (Late 2023)</strong></summary>
     <p>With the ESP32 version of the circuit working on the breadboard, I was ready to move to PCB design, properly this time. I got access to a student license for <strong>Altium Designer</strong> through a TAMU professor and started over from scratch.</p>
 <p>The design came together well. I broke out spare ESP32 and soundboard pins in case I wanted them later, added some silkscreen content in the empty spaces for personality, and sent it to JLCPCB.</p>
-<p><img src="Altium_PCB.png" alt="Altium PCB layout">
+<p><img src="Images/Altium_PCB.png" alt="Altium PCB layout">
 <em>Altium layout for V2. A significant area-efficiency improvement over the KiCAD attempt</em></p>
 <p>The boards arrived and I assembled them by hand. I made the mistake of skipping the solder paste stencil and applying paste manually to each SMD pad, which is technically possible but results in inconsistent paste volumes and a lot of solder bridges. The boards looked rough. They mostly worked anyway.</p>
-<p><img src="solder.jpg" alt="Ugly solder job">
+<p><img src="Images/solder.jpg" alt="Ugly solder job">
 <em>This is what happens when you skip the stencil</em></p>
-<p><img src="Soldered_PCB.jpg" alt="Completed PCB">
+<p><img src="Images/Soldered_PCB.jpg" alt="Completed PCB">
 <em>Assembled ESP32 PCB</em></p>
-<p><img src="PCB_Powered.jpg" alt="PCB powered on">
+<p><img src="Images/PCB_Powered.jpg" alt="PCB powered on">
 <em>PCB powered on, but unable to control shift registers nor LCD screen</em></p>
 <p>Most of the functionality came up on first power-on. Most. The LCD, the soundboard, and every other I2C device on the board refused to respond. I tried bodge-wiring a missed connection I found, but no dice.</p>
 <p>My best diagnosis, in retrospect: the BSS138 logic level shifter implementation was wrong. The Adafruit breakout board had worked fine on the breadboard, but when I integrated the same circuit into the PCB directly, something in my implementation was off. I also never added I2C pull-up resistors to the SDA and SCL lines, a fairly fundamental oversight. I didn&rsquo;t fry the ESP32, which I&rsquo;m choosing to count as a win, but the I2C peripherals never talked.</p>
@@ -544,9 +544,11 @@ Documentation unfortunately tends to be a retroactive effort.</p>
     <p>5/11/26 - Content &amp; structure overhaul</p>
 <!-- - Rewrote every existing page for consistent tone and detail
 - Cleaned up front matter, categories, tags, and weights across all pages
-- Added First Post and Misc. Projects stub
-- Reordered portfolio: engineering work first, personal pages last
-- Updated all project statuses to May 2026 -->
+- Fixed First Post and added Misc. Projects stub
+- Fixed page weights (ordering)
+- Updated all project statuses to May 2026
+- Added SAE Aero page and overhauled PBA pages with new content, images, and videos
+- Fixed deploy pipeline with Claude -->
 <p>9/4/25 - Major content update</p>
 <!-- - Fixed categories & tags on all posts
 - Put all images into folders to clean up file structure
